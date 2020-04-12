@@ -1144,8 +1144,7 @@
                   >
                     <span class="d-none d-sm-inline-block">
                       <span data-t>topbar.greeting</span>
-                    <strong data-t>developer.firstname</strong>&nbsp;
-                    
+                      <strong data-t>developer.firstname</strong>&nbsp;
                     </span>
                     <span
                       class="omd-badge omd-badge--username rounded py-2 px-3"
@@ -1740,7 +1739,7 @@
                   <div
                     data-attr-t
                     data-attr-t-interpolate
-                    class-t="dropdown-menu dropdown-menu--wider dropdown-menu-{{topbar.dropdown.direction}} p-2 animate slideIn"
+                    class-t="dropdown-menu dropdown-menu--wider dropdown-menu-{{topbar.dropdown.direction}} p-2 animate slideIn shadow"
                     aria-labelledby="dropdownSearchButton"
                   >
                     <form class="search-form" method="get">
@@ -1778,9 +1777,19 @@
 
           <!-- begin::main -->
           <!-- begin::content -->
-          <main class="container-fluid my-5">
-            <div class="row no-gutters">
-              <p class="col"></p>
+          <main class="main-section container-fluid">
+            <div class="omd-subheader row no-gutters">
+              <div
+                class="omd-subheader__title-area col d-flex align-items-center"
+              >
+                <h3 class="omd-subheader__title text-dark font-size--1">
+                  Dashboard
+                </h3>
+                <!-- <span class="separator separator--breadcrumb"></span> -->
+              </div>
+              <div class="omd-subheader__options-area col">
+                
+              </div>
             </div>
             <div class="row" style="height: 2000px;"></div>
             <div class="row"></div>

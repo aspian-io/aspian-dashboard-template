@@ -1,4 +1,5 @@
 @import 'base/typography';
+@import '~persian-datepicker/src/sass/persian-datepicker';
 
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
@@ -13,6 +14,7 @@
 
 @import 'components/sidebar';
 @import 'components/topbar';
+@import 'components/subheader';
 @import 'components/badge';
 @import 'components/chat';
 
@@ -22,4 +24,4 @@
 @import 'layout/section';
 @import 'layout/footer';
 
-@import 'pages/home';
+@import 'pages/dashboard';

@@ -1,5 +1,6 @@
 import PerfectScrollbar from 'perfect-scrollbar';
-import * as MyFn from './_topbar.js';
+import * as TopbarFn from './_topbar.js';
+import * as SubheaderFn from './_subheader';
 
 // Perfect-scrollbar for sidebar
 const sidebarPs = new PerfectScrollbar('#sidebar_accordion');
@@ -10,7 +11,8 @@ const makeSidebarMinimized = () => {
     .addClass('l-container--sidebar-minimized')
     .data('minimized', true)
     .data('hover-allowed', true);
-  MyFn.addTobarRecalcWidth();
+  TopbarFn.addTopbarRecalcWidth();
+  SubheaderFn.addSubheaderRecalcWidth();
 };
 
 // reset sidebar size to its default
@@ -19,7 +21,8 @@ const resetMinimizedSidebar = () => {
     .removeClass('l-container--sidebar-minimized')
     .data('minimized', false)
     .data('hover-allowed', false);
-  MyFn.removeTobarRecalcWidth();
+  TopbarFn.removeTopbarRecalcWidth();
+  SubheaderFn.removeSubheaderRecalcWidth();
 };
 
 // click event for non-collapse items in sidebar nav
@@ -64,14 +67,16 @@ $('#sidebar_button').click(function (e) {
 $('#sidebar_nav').on('mouseenter', function (e) {
   if ($('.l-container--sidebar').data('hover-allowed') === true) {
     $('.l-container--sidebar').removeClass('l-container--sidebar-minimized');
-    MyFn.removeTobarRecalcWidth();
+    TopbarFn.removeTopbarRecalcWidth();
+    SubheaderFn.removeSubheaderRecalcWidth();
   }
 });
 
 $('#sidebar_nav').on('mouseleave', function (e) {
   if ($('.l-container--sidebar').data('hover-allowed') === true) {
     $('.l-container--sidebar').addClass('l-container--sidebar-minimized');
-    MyFn.addTobarRecalcWidth();
+    TopbarFn.addTopbarRecalcWidth();
+    SubheaderFn.addSubheaderRecalcWidth();
   }
 });
 

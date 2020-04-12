@@ -1,5 +1,6 @@
 .omd-topbar {
   position: fixed;
+  z-index: z('topbar');
 
   @include ltr {
     right: 0;

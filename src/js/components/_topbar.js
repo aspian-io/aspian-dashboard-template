@@ -1,11 +1,11 @@
 import PerfectScrollbar from 'perfect-scrollbar';
 
 // Recalculate topbar width based on new viewport size
-export function addTobarRecalcWidth() {
+export function addTopbarRecalcWidth() {
   $('.omd-topbar').addClass('omd-topbar--recalc-width');
 }
 
-export function removeTobarRecalcWidth() {
+export function removeTopbarRecalcWidth() {
   $('.omd-topbar').removeClass('omd-topbar--recalc-width');
 }
 

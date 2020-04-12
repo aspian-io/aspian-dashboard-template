@@ -1,15 +1,28 @@
 // clearfix
 %clearfix {
-    &:after {
-      content: '';
-      display: table;
-      clear: both;
-    }
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
 }
 
 // to reset list style
 %listreset {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// breadcrumb separator
+.separator {
+  display: inline-block;
+  border-radius: 2px;
+  margin: 0 1rem;
+
+  &--breadcrumb {
+    width: 1px;
+    height: 22px;
+    background-color: gray('300');
+  }
 }

@@ -3,11 +3,14 @@
 
 // main scss file
 import '../scss/main-rtl.scss';
+// import common chunks
+import './common';
 
 // mark.js chat search implementation to jump to and highlight search results
 import './vendors/jquery-finder/_chatSearch-rtl';
 // emoji-button.js emoji picker plugin implementation
 import './vendors/emoji-button/_emoji-button-rtl';
-// import common chunks
-import './common';
+// persian datepicker
+import './vendors/persian-datepicker/persian-datepicker-rtl';
+
 import './base/_rtl';

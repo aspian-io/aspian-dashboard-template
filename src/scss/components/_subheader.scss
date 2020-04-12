@@ -1,0 +1,35 @@
+.omd-subheader {
+  position: fixed;
+  top: 4rem;
+  right: 0;
+  left: 16.5rem;
+  height: 3.3rem;
+  background-color: $white;
+  border-bottom: 1px solid $topbar-border-color;
+  overflow: hidden;
+  transition: left 0.3s ease-out;
+
+  &__title-area {
+    padding: 1rem 1.25rem !important;
+  }
+
+  &__title {
+      margin: 0;
+  }
+
+  &__options-area {
+    padding: 0.75rem 1.25rem !important;
+    text-align: right;
+  }
+
+  &--recalc-width {
+    @include ltr {
+      right: 0;
+      left: 4.3rem;
+    }
+    @include rtl {
+      left: 0;
+      right: 4.3rem;
+    }
+  }
+}
