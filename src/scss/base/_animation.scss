@@ -1,0 +1,65 @@
+// Sidebar menu show text delay
+@keyframes showTextDelay {
+  0%,
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.showTextDelay {
+  animation: showTextDelay 0.3s linear;
+}
+
+// Animation effect for Bootstrap dropdowns
+.animate {
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideIn {
+  0% {
+    top: 1rem;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.slideIn {
+  animation-name: slideIn;
+}
+
+// Scaling circle animation effect
+@keyframes scalingCircle {
+  0% {
+    transform: scale(0.1, 0.1);
+    opacity: 1;
+  }
+
+  20%,
+  100% {
+    transform: scale(1.2, 1.2);
+    opacity: 0;
+  }
+}
+
+.scalingCircle {
+  animation: scalingCircle 3.5s ease-out infinite;
+}
+
+// Typing animation
+@keyframes typingAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

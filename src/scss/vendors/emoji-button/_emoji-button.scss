@@ -1,0 +1,36 @@
+.emoji-picker {
+  width: 22rem !important;
+  border-radius: 0 !important;
+  border: 1px solid theme-color('light') !important;
+
+  &__tab {
+    font-size: 1rem !important;
+    border: none !important;
+    color: theme-color('light-gray') !important;
+
+    &.active {
+      border-radius: 0 !important;
+      background: $white !important;
+      border-bottom: 2px solid theme-color('primary') !important;
+    }
+  }
+
+  &__content {
+    height: 23rem !important;
+  }
+
+  &__tab-body {
+    margin-top: 1.4rem !important;
+    left: 1rem !important;
+    width: 20.5rem !important;
+
+    h2 {
+      padding-bottom: 0.6rem;
+      color: theme-color('gray') !important;
+    }
+  }
+
+  &__emoji {
+    font-size: 1.5rem !important;
+  }
+}

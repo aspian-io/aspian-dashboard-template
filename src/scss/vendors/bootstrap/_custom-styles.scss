@@ -1,0 +1,37 @@
+// customize styles
+.dropdown-menu {
+  &--wider {
+    min-width: 20rem;
+    width: 20rem;
+    @include media-breakpoint-down(xs) {
+      min-width: 15rem;
+      width: 15rem;
+    }
+  }
+  &--narrower {
+    min-width: 5rem;
+    width: 5rem;
+  }
+
+  .dropdown-item {
+    &:active {
+      background-color: #f8f9fa;
+    }
+  }
+}
+
+// Close button disable outline
+button:focus {
+  outline: none;
+}
+
+// ligh gray btn hover color
+.btn-outline-light-gray:hover {
+  color: theme-color('gray');
+}
+
+.badge {
+  @include rtl {
+    padding: 0.35em 0.4em 0.15em;
+  }
+}

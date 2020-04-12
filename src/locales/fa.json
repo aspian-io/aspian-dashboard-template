@@ -1,0 +1,202 @@
+{
+  "site-title": "آسپیان داشبورد",
+  "sample-names": {
+    "male": {
+      "name-1": "پارسا ایرانی",
+      "name-2": "کیان خوشفکر"
+    },
+    "female": {
+      "name-1": "کیانا راستین",
+      "name-2": "آرمیتا هوشمند",
+      "name-3": "روناک روشن"
+    }
+  },
+  "sample-text": {
+    "lorem5": "لورم ایپسوم متن ساختگی با",
+    "lorem10": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت",
+    "lorem15": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از",
+    "lorem20": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و",
+    "lorem25": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله"
+  },
+  "brand": {
+    "name": "آسپیان"
+  },
+  "developer": {
+    "fullname": "امید روحانی",
+    "firstname": "امید"
+  },
+  "topbar": {
+    "greeting": "درود،",
+    "empty-avatar": "ا",
+    "dropdown": {
+      "direction": "right",
+      "name-first-letter-s": "س",
+      "name-first-letter-l": "ل",
+      "search-placeholder-text": "جستجو ...",
+      "notifications": "اعلان ها",
+      "mark-all-as-read": "تبدیل همه به خوانده شده",
+      "sample-text-15": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از",
+      "sample-time": "۲ ساعت قبل",
+      "see-all-notifications": "مشاهده همه اعلان ها",
+      "messages": "پیام ها",
+      "see-all-messages": "مشاهده همه پیام ها",
+      "user": {
+        "my-profile": "شناسنامه من",
+        "my-messages": "پیام های من",
+        "my-activities": "فعالیت های من",
+        "my-tasks": "وظایف من",
+        "sign-out": "خروج"
+      }
+    }
+  },
+  "menu": {
+    "sidebar": {
+      "direction": "left"
+    },
+    "arrows": {
+      "direction": "right"
+    },
+    "items": {
+      "dashboard": "پیشخوان",
+      "posts": "نوشته ها",
+      "media": "رسانه",
+      "pages": "برگه ها",
+      "comments": "دیدگاه ها",
+      "appearance": "نمایش",
+      "users": "کاربران",
+      "settings": "تنظیمات",
+      "products": "محصولات",
+      "orders": "سفارشات",
+      "coupons": "کوپن تخفیف",
+      "reports": "گزارشات"
+    },
+    "titles": {
+      "general": "عمومی",
+      "e-commerce": "تجارت الکترونیک"
+    },
+    "sub": {
+      "items": {
+        "all-posts": "همه نوشته ها",
+        "add-new-post": "افزودن نوشته",
+        "categories": "دسته ها",
+        "tags": "برچسب ها",
+        "library": "کتابخانه",
+        "add-new-media": "افزودن",
+        "all-pages": "همه برگه ها",
+        "add-new-page": "افزودن برگه",
+        "customize": "شخصی سازی",
+        "widgets": "ابزارک ها",
+        "menus": "فهرست ها",
+        "all-users": "همه کاربران",
+        "add-new-user": "افزودن",
+        "your-profile": "شناسنامه شما",
+        "general": "عمومی ",
+        "writing": "نوشتن",
+        "reading": "خواندن",
+        "discussions": "گفتگوها",
+        "media": "رسانه",
+        "permalinks": "پیوندهای یکتا",
+        "all-products": "همه کالاها",
+        "add-new-product": "افزودن کالا"
+      }
+    }
+  },
+  "chat": {
+    "is-typing": "در حال نوشتن",
+    "back-arrow": {
+      "direction": "right"
+    },
+    "chats-page": {
+      "chats": "گفتگوها",
+      "time": "۹:۵۷ ق.ظ",
+      "search-placeholder": "جستجو کاربر یا پیام...",
+      "name-first-letter": "پ",
+      "nav": {
+        "left-key-rounded-side": "right",
+        "right-key-rounded-side": "left"
+      }
+    },
+    "settings": {
+      "settings-title": "تنظیمات",
+      "user-role": "طراح و برنامه نویس وب",
+      "account": {
+        "account-title": "حساب کاربری",
+        "account-desc": "تنظیمات حساب کاربری شما",
+        "fullname": "نام و نام خانوادگی",
+        "fullname-placeholder": "نام و نام خانوادگی",
+        "email": "پست الکترونیک",
+        "email-placeholder": "you@yoursite.com",
+        "phone": "تلفن",
+        "phone-placeholder": "(۰۵۱) ۳۸۸۸-۹۹۹۹",
+        "bio": "بیوگرافی",
+        "bio-placeholder": "خودتان را معرفی کنید",
+        "save-btn": "ذخیره تنظیمات"
+      },
+      "security": {
+        "security-title": "حریم خصوصی و امنیت",
+        "security-desc": "تنظیمات حریم خصوصی و امنیت شما",
+        "current-pass": "رمز ورود کنونی",
+        "current-pass-placeholder": "رمز ورود کنونی",
+        "new-pass": "رمز ورود جدید",
+        "new-pass-placeholder": "رمز ورود جدید",
+        "confirm-pass": "تایید رمز ورود ",
+        "confirm-pass-placeholder": "تایید رمز ورود",
+        "save-btn": "تغییر رمز ورود"
+      },
+      "notifications": {
+        "notifications-title": "اعلان ها",
+        "notifications-desc": "تنظیمات اعلان های شما",
+        "sound": "نوای هشدار پیام جدید",
+        "new-msg-number": "نمایش تعداد پیام های جدید"
+      }
+    },
+    "chat-details": {
+      "header": {
+        "online": "آنلاین",
+        "options": {
+          "search": "جستجو",
+          "user-info": "اطلاعات کاربر"
+        }
+      },
+      "content": {
+        "time": "۷ دقیقه قبل",
+        "dropdown": {
+          "direction-right": "left",
+          "direction-left": "right",
+          "edit": "ویرایش",
+          "share": "اشتراک",
+          "delete": "حذف"
+        }
+      },
+      "footer": {
+        "textarea-placeholder": "پیام خود را تایپ کنید..."
+      }
+    },
+    "user-info": {
+      "user-info-title": "اطلاعات کاربر",
+      "user-role": "کاربر جدید",
+      "online": "آنلاین",
+      "details-btn": "جزئیات",
+      "files-btn": "فایل ها",
+      "username": "نام کاربری",
+      "username-txt": "s.lopez",
+      "email": "پست الکترونیک",
+      "email-txt": "s.lopez@gamil.com",
+      "country": "کشور",
+      "country-txt": "ایالات متحده",
+      "reg-date": "تاریخ ثبت نام",
+      "reg-date-txt": "۱۳۹۸/۰۴/۲۸",
+      "ip": "آی پی آدرس",
+      "ip-txt": "۱۹۲.۱۶۸.۱۳.۳۲۱",
+      "size": "۱۰۶/۲",
+      "size-unit": "کیلوبایت",
+      "download": "دانلود",
+      "delete": "حذف"
+    }
+  },
+  "footer": {
+    "copyright": "کپی رایت",
+    "made-with": "تولید شده با",
+    "by": "توسط"
+  }
+}

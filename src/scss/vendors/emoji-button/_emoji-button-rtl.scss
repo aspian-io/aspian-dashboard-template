@@ -1,0 +1,11 @@
+.emoji-picker {
+  &__tab-body {
+    h2 {
+      text-align: right !important;
+      font-family: $font-family-base !important;
+      font-size: 0.8rem !important;
+      font-weight: 400 !important;
+      margin-right: 0.6rem !important;
+    }
+  }
+}

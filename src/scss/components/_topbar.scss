@@ -1,0 +1,121 @@
+.omd-topbar {
+  position: fixed;
+
+  @include ltr {
+    right: 0;
+    left: 16.5rem;
+  }
+  @include rtl {
+    left: 0;
+    right: 16.5rem;
+  }
+  top: 0;
+  height: $topbar-height;
+  border-bottom: 1px solid $topbar-border-color;
+  font-size: 0.8rem;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 0.6rem;
+  }
+
+  transition: all 0.3s ease-out;
+
+  &--recalc-width {
+    top: 0;
+    @include ltr {
+      right: 0;
+      left: 4.3rem;
+    }
+    @include rtl {
+      left: 0;
+      right: 4.3rem;
+    }
+  }
+
+  .dropdown {
+    &-menu {
+      .search-form {
+        input {
+          &::placeholder {
+            color: gray('500');
+          }
+        }
+        i {
+          color: $gray;
+        }
+      }
+      font-size: 0.8rem;
+      border: none;
+      padding: 0;
+
+      .media {
+        img {
+          height: 2.5rem;
+          width: 2.5rem;
+          border-radius: 50%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
+      .dropdown-items-wrapper {
+        position: relative;
+        height: 15rem;
+      }
+    }
+  }
+
+  &__menu {
+    &-item {
+      display: flex;
+
+      a {
+        position: relative;
+        border-radius: 0.25rem;
+
+        &:hover {
+          background-color: gray('100');
+        }
+
+        .notification-ring {
+          height: 40px;
+          width: 40px;
+          border-radius: 10rem;
+          position: absolute;
+          z-index: 0;
+          top: -7px;
+          right: -8px;
+          background-color: transparent;
+          border: 2px solid theme-color('danger');
+          @extend .scalingCircle;
+        }
+
+        .notification-badge {
+          position: absolute;
+          font-size: 0.5rem;
+          top: 7px;
+          right: 5px;
+          z-index: 1;
+        }
+      }
+
+      .user-dropdown {
+        &__list {
+          a {
+            color: $gray;
+            &:hover {
+              background-color: gray('100');
+              color: theme-color('primary') !important;
+              transition: color 0.3s linear;
+
+              .fa-power-off {
+                color: gray('500') !important;
+                transition: color 0.8s linear;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+// Bootstrap custom colors
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$white: #fff;
+$gray: #737d88;
+$gray-dark: #343a40;
+$input-dark-bg: darken(#f2f3f8, 4%);
+$input-dark-text: #adb5bd;
+
+// Bootstrap custom theme colors
+$theme-colors: (
+  'primary': #5867dd,
+  'secondary': #e1e1ef,
+  'success': #0abb87,
+  'info': #5d78ff,
+  'warning': #ffb822,
+  'danger': #fd397a,
+  'light': #f2f3f8,
+  'light-gray': #aab0b7,
+  'gray': #737d88,
+  'dark': #343a40,
+  'input-dark-bg': $input-dark-bg,
+);
+
+// to support Reponsive Font Size (RFS) in Bootstrap 4.4.1
+$enable-responsive-font-sizes: true;
+
+// Bootstrap body default bg color
+$body-bg: #f2f3f8;

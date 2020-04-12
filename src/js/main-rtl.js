@@ -1,0 +1,13 @@
+// Google font: Poppins
+// import 'typeface-poppins';
+
+// main scss file
+import '../scss/main-rtl.scss';
+
+// mark.js chat search implementation to jump to and highlight search results
+import './vendors/jquery-finder/_chatSearch-rtl';
+// emoji-button.js emoji picker plugin implementation
+import './vendors/emoji-button/_emoji-button-rtl';
+// import common chunks
+import './common';
+import './base/_rtl';

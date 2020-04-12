@@ -1,0 +1,6 @@
+.custom-palceholder {
+  &::placeholder {
+    font-size: 0.8rem;
+    color: gray('500');
+  }
+}

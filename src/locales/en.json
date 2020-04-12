@@ -1,0 +1,203 @@
+{
+  "site-title": "ASPIAN Dashboard",
+  "sample-names": {
+    "male": {
+      "name-1": "Johny Ruiz",
+      "name-2": "Craig Lopez"
+    },
+    "female": {
+      "name-1": "Sarah Lopez",
+      "name-2": "Judy Vasquez",
+      "name-3": "Gloria Peters"
+    }
+  },
+  "sample-text": {
+    "lorem5": "Lorem ipsum dolor sit amet.",
+    "lorem10": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, cum.",
+    "lorem15": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati ab doloremque, unde voluptatum modi illum.",
+    "lorem20": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus saepe repudiandae soluta ipsa architecto exercitationem consequuntur neque quasi odit tempore.",
+    "lorem25": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nam assumenda expedita reiciendis exercitationem at dolorem quos. Voluptatem atque ad quaerat architecto consequatur quasi incidunt?"
+  },
+  "brand": {
+    "name": "ASPIAN"
+  },
+  "developer": {
+    "fullname": "Omid Rouhani",
+    "firstname": "Omid"
+  },
+  "topbar": {
+    "greeting": "Hi,",
+    "empty-avatar": "O",
+    "dropdown": {
+      "direction": "left",
+      "name-first-letter-s": "S",
+      "name-first-letter-l": "L",
+      "search-placeholder-text": "Search ...",
+      "notifications": "Notifications",
+      "mark-all-as-read": "Mark all as read",
+      "sample-text-15": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem minus delectus expedita corporis harum nostrum?",
+      "sample-time": "2h ago",
+      "see-all-notifications": "See all notifications",
+      "messages": "Messages",
+      "see-all-messages": "See all messages",
+      "user": {
+        "my-profile": "My Profile",
+        "my-messages": "My Messages",
+        "my-activities": "My Activities",
+        "my-tasks": "My Tasks",
+        "sign-out": "Sign Out"
+      }
+    }
+  },
+  "menu": {
+    "sidebar": {
+      "direction": "right"
+    },
+    "arrows": {
+      "direction": "left"
+    },
+    "items": {
+      "dashboard": "Dashboard",
+      "posts": "Posts",
+      "media": "Media",
+      "pages": "Pages",
+      "comments": "Comments",
+      "appearance": "Appearance",
+      "users": "Users",
+      "settings": "Settings",
+      "products": "Products",
+      "orders": "Orders",
+      "coupons": "Coupons",
+      "reports": "Reports"
+    },
+    "titles": {
+      "general": "General",
+      "e-commerce": "E-commerce"
+    },
+    "sub": {
+      "items": {
+        "all-posts": "All Posts",
+        "add-new-post": "Add New",
+        "categories": "Categories",
+        "tags": "Tags",
+        "library": "Library",
+        "add-new-media": "Add New",
+        "all-pages": "All Pages",
+        "add-new-page": "Add New",
+        "customize": "Customize",
+        "widgets": "Widgets",
+        "menus": "Menus",
+        "all-users": "All Users",
+        "add-new-user": "Add New",
+        "your-profile": "Your Profile",
+        "general": "General",
+        "writing": "Writing",
+        "reading": "Reading",
+        "discussions": "Discussion",
+        "media": "Media",
+        "permalinks": "Permalinks",
+        "all-products": "All Products",
+        "add-new-product": "Add New"
+      }
+    }
+  },
+  "chat": {
+    "is-typing": "is typing",
+    "back-arrow": {
+      "direction": "left"
+    },
+    "chats-page": {
+      "chats": "Chats",
+      "time": "9:57 am",
+      "search-placeholder": "Search for messages or users...",
+      "name-first-letter": "J",
+      "nav": {
+        "left-key-rounded-side": "left",
+        "right-key-rounded-side": "right"
+      }
+    },
+    "settings": {
+      "settings-title": "Settings",
+      "user-role": "Web Designer and Developer",
+      "account": {
+        "account-title": "Account",
+        "account-desc": "Your account settings",
+        "fullname": "Full Name",
+        "fullname-placeholder": "Type your full name",
+        "email": "Email",
+        "email-placeholder": "you@yoursite.com",
+        "phone": "Phone",
+        "phone-placeholder": "(123) 456-789",
+        "bio": "Bio",
+        "bio-placeholder": "Describe yourself",
+        "save-btn": "Save Prefrences"
+      },
+      "security": {
+        "security-title": "Privacy and Security",
+        "security-desc": "Your privacy and security settings",
+        "current-pass": "Current Password",
+        "current-pass-placeholder": "Current password",
+        "new-pass": "New Password",
+        "new-pass-placeholder": "New password",
+        "confirm-pass": "Confirm Password",
+        "confirm-pass-placeholder": "Confirm password",
+        "save-btn": "Change Password"
+      },
+      "notifications": {
+        "notifications-title": "Notifications",
+        "notifications-desc": "Your notifications settings",
+        "sound": "Sound",
+        "new-msg-number": "New messages number"
+      }
+    },
+    "chat-details": {
+      "header": {
+        "online": "Online",
+        "options": {
+          "search": "Search",
+          "user-info": "User Info"
+        }
+      },
+      "content": {
+        "time": "7 min ago",
+        "dropdown": {
+          "direction-right": "right",
+          "direction-left": "left",
+          "edit": "Edit",
+          "share": "Share",
+          "delete": "Delete"
+        }
+      },
+      "footer": {
+        "textarea-placeholder": "Type your message..."
+      }
+    },
+    "user-info": {
+      "user-info-title": "User Info",
+      "user-role": "New User",
+      "online": "Online",
+      "details-btn": "Details",
+      "files-btn": "Files",
+      "username": "Username",
+      "username-txt": "s.lopez",
+      "email": "Email",
+      "email-txt": "s.lopez@gamil.com",
+      "country": "Country",
+      "country-txt": "United States",
+      "reg-date": "Registeration Date",
+      "reg-date-txt": "01/02/2018",
+      "ip": "IP Address",
+      "ip-txt": "192.168.13.321",
+      "size": "106.2",
+      "size-unit": "KB",
+      "download": "Download",
+      "delete": "Delete"
+    }
+  },
+  "footer": {
+    "copyright": "Copyright",
+    "made-with": "Made with",
+    "by": "by",
+    "year-id": "year"
+  }
+}
