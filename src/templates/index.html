@@ -1782,16 +1782,63 @@
               <div
                 class="omd-subheader__title-area col d-flex align-items-center"
               >
-                <h3 class="omd-subheader__title text-dark font-size--1">
-                  Dashboard
-                </h3>
+                <h3
+                  class="omd-subheader__title text-dark font-size--1"
+                  data-t="menu.items.dashboard"
+                ></h3>
                 <!-- <span class="separator separator--breadcrumb"></span> -->
               </div>
               <div class="omd-subheader__options-area col">
-                
+                <div class="omd-subheader__date-dropdown dropdown">
+                  <a
+                    href="#"
+                    class="omd-subheader__date-btn btn btn-light font-size--08 text-info shadow-none border-0"
+                    role="button"
+                    id="dashboardDateRange"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    data-offset="0, 8"
+                    data-toggle="tooltip"
+                    data-placement="left"
+                    title="Select dashboard daterange"
+                  >
+                    <span class="text-info mr-2" id="selectedDateRange"></span>
+                    <span>
+                      <i class="fas fa-calendar-alt text-info"></i>
+                    </span>
+                  </a>
+                  <div
+                    class="omd-subheader__date-dropdown-menu dropdown-menu font-size--08 border-0 shadow animate slideIn"
+                    aria-labelledby="dashboardDateRange"
+                  >
+                    <a href="#" class="dropdown-item" id="todayDate">Today</a>
+                    <a href="#" class="dropdown-item" id="yesterdayDate"
+                      >Yesterday</a
+                    >
+                    <a href="#" class="dropdown-item" id="lastSevenDays"
+                      >Last 7 Days</a
+                    >
+                    <a href="#" class="dropdown-item" id="lastThirtyDays"
+                      >Last 30 Days</a
+                    >
+                    <a href="#" class="dropdown-item" id="thisMonth"
+                      >This Month</a
+                    >
+                    <a href="#" class="dropdown-item" id="lastMonth"
+                      >Last Month</a
+                    >
+                    <a href="#" class="dropdown-item" id="customDateRange"
+                      >Custom Range</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="row" style="height: 2000px;"></div>
+            <div
+              class="wrapper__main-content main-content row"
+              style="height: 2000px;"
+            ></div>
             <div class="row"></div>
             <div class="row"></div>
             <div class="row"></div>

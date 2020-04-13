@@ -1,4 +1,4 @@
-// convert pixel unit to rem
+// convert px unit to rem
 @function rem($pxsize) {
   @return ($pxsize/16) + rem;
 }
@@ -12,4 +12,4 @@
     @return null;
   }
 }
-$z-indexes: ('subheader', 'topbar');
+$z-indexes: ('topbar', 'subheader', 'main-content');

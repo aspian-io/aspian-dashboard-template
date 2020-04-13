@@ -10,6 +10,8 @@ import './components/_chat';
 import './components/_textarea_autoresize';
 // Handle the button for hidden file input
 import './components/_uploadbtn';
+// subheader common codes
+import './components/_subheader-common';
 
 // importing dropzone
 import './vendors/dropzone/_dropzone';

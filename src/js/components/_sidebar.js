@@ -1,6 +1,6 @@
 import PerfectScrollbar from 'perfect-scrollbar';
 import * as TopbarFn from './_topbar.js';
-import * as SubheaderFn from './_subheader';
+import * as SubheaderFn from './_subheader-common';
 
 // Perfect-scrollbar for sidebar
 const sidebarPs = new PerfectScrollbar('#sidebar_accordion');

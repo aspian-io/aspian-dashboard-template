@@ -9,7 +9,7 @@
  * https://opensource.org/licenses/MIT
  */
 
-import '../../base/_rtl';
+import '../../base/_utilities-rtl';
 
 $(document).ready(function () {
   $(finder.activator).click(function () {

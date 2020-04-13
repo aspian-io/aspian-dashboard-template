@@ -35,3 +35,28 @@ button:focus {
     padding: 0.35em 0.4em 0.15em;
   }
 }
+
+.tooltip {
+  &-inner {
+    background: $white;
+    font-size: 0.6rem;
+    color: $gray;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  }
+}
+.bs-tooltip-auto[x-placement^='bottom'] .arrow::before,
+.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: $white !important;
+}
+.bs-tooltip-auto[x-placement^='top'] .arrow::before,
+.bs-tooltip-top .arrow::before {
+  border-top-color: $white !important;
+}
+.bs-tooltip-auto[x-placement^='left'] .arrow::before,
+.bs-tooltip-left .arrow::before {
+  border-left-color: $white !important;
+}
+.bs-tooltip-auto[x-placement^='right'] .arrow::before,
+.bs-tooltip-right .arrow::before {
+  border-right-color: $white !important;
+}
