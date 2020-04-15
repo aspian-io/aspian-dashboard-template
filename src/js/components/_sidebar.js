@@ -88,7 +88,7 @@ $(document).ready(function () {
   $('#sidebar_accordion').css('height', `${windowHeight - 100}px`);
 
   // making sidebar minimized for smaller screens
-  if (windowWidth < 922) {
+  if (windowWidth < 992) {
     makeSidebarMinimized();
   }
 });
@@ -102,7 +102,7 @@ $(window).resize(function () {
   $('#sidebar_accordion').css('height', `${windowHeight - 100}px`);
 
   // making sidebar minimized for smaller screens on window resizing
-  if (windowWidth < 922) {
+  if (windowWidth < 992) {
     makeSidebarMinimized();
   } else {
     resetMinimizedSidebar();

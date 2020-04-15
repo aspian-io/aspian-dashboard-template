@@ -1,0 +1,98 @@
+.datepicker-plot-area {
+  font-family: $font-family-base;
+  border: none;
+  box-shadow: none;
+}
+
+.datepicker-plot-area
+  .datepicker-day-view
+  .month-grid-box
+  .header
+  .header-row-cell,
+.datepicker-plot-area .datepicker-navigator .pwt-btn-next,
+.datepicker-plot-area .datepicker-navigator .pwt-btn-prev,
+.datepicker-plot-area .datepicker-navigator .pwt-btn-switch {
+  color: gray('700');
+  font-weight: 500;
+}
+
+.datepicker-plot-area .datepicker-day-view .table-days td span,
+.datepicker-plot-area .datepicker-month-view .month-item,
+.datepicker-plot-area .datepicker-year-view .year-item {
+  color: gray('700');
+}
+
+.datepicker-plot-area .toolbox .pwt-btn-calendar,
+.datepicker-plot-area .toolbox .pwt-btn-submit,
+.datepicker-plot-area .toolbox .pwt-btn-today {
+  color: gray('600');
+  border-radius: 0.25rem;
+
+  &:hover {
+    background-color: gray('200');
+  }
+}
+
+.datepicker-plot-area
+  .datepicker-day-view
+  .month-grid-box
+  .header
+  .header-row-cell {
+  font-weight: 500;
+}
+
+.datepicker-plot-area .datepicker-day-view .table-days td.selected span,
+.datepicker-plot-area .datepicker-month-view .month-item.selected,
+.datepicker-plot-area .datepicker-year-view .year-item.selected {
+  text-shadow: none;
+}
+
+.datepicker-plot-area .toolbox .pwt-btn-calendar,
+.datepicker-plot-area .toolbox .pwt-btn-submit,
+.datepicker-plot-area .toolbox .pwt-btn-today {
+  font-weight: 500;
+}
+
+.datepicker-plot-area .datepicker-day-view .table-days td span,
+.datepicker-plot-area .datepicker-month-view .month-item,
+.datepicker-plot-area .datepicker-navigator .pwt-btn-next,
+.datepicker-plot-area .datepicker-navigator .pwt-btn-prev,
+.datepicker-plot-area .datepicker-navigator .pwt-btn-switch,
+.datepicker-plot-area .datepicker-year-view .year-item {
+  border-radius: 0.25rem;
+}
+
+.datepicker-plot-area .datepicker-day-view .table-days td span:hover,
+.datepicker-plot-area .datepicker-month-view .month-item:hover,
+.datepicker-plot-area .datepicker-year-view .year-item:hover {
+  background-color: theme-color('info');
+}
+
+.datepicker-plot-area .datepicker-day-view .table-days td.selected span,
+.datepicker-plot-area .datepicker-month-view .month-item.selected,
+.datepicker-plot-area .datepicker-year-view .year-item.selected {
+  background-color: theme-color('primary');
+}
+
+.pwt-btn.pwt-btn-prev,
+.pwt-btn.pwt-btn-next {
+  font-size: 1.5rem;
+  font-weight: 200 !important;
+  color: gray('500') !important;
+
+  &:hover {
+    color: gray('700') !important;
+  }
+}
+
+.datepicker-plot-area .datepicker-day-view .table-days {
+  @include ltr {
+    direction: ltr;
+  }
+}
+
+.today {
+  span {
+    border-radius: 0.25rem !important;
+  }
+}

@@ -958,25 +958,52 @@
           <main class="main-section container-fluid">
             <div class="omd-subheader row no-gutters">
               <div class="omd-subheader__title-area col d-flex align-items-center">
-                <h3 class="omd-subheader__title text-dark font-size--1">پیشخوان</h3>
+                <h3 class="omd-subheader__title text-dark m-0">پیشخوان</h3>
                 <!-- <span class="separator separator--breadcrumb"></span> -->
-              </div>
-              <div class="omd-subheader__options-area col">
+
                 <div class="omd-subheader__date-dropdown dropdown">
-                  <a href="#" class="omd-subheader__date-btn btn btn-light font-size--08 text-info shadow-none border-0" role="button" id="dashboardDateRange" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="0, 8" data-placement="left" title="Select dashboard daterange">
-                    <span class="text-info mr-2" id="selectedDateRange"></span>
-                    <span>
-                      <i class="fas fa-calendar-alt text-info"></i>
-                    </span>
-                  </a>
+                  <button class="omd-subheader__date-btn btn btn-light text-info shadow-none border-0" id="dashboardDateRange" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="0, 10" data-placement="left" title="Select dashboard daterange">
+                    <span class="text-info" id="selectedDateRange"></span>
+                  </button>
+
                   <div class="omd-subheader__date-dropdown-menu dropdown-menu font-size--08 border-0 shadow animate slideIn" aria-labelledby="dashboardDateRange">
-                    <a href="#" class="dropdown-item" id="todayDate">Today</a>
-                    <a href="#" class="dropdown-item" id="yesterdayDate">Yesterday</a>
-                    <a href="#" class="dropdown-item" id="lastSevenDays">Last 7 Days</a>
-                    <a href="#" class="dropdown-item" id="lastThirtyDays">Last 30 Days</a>
-                    <a href="#" class="dropdown-item" id="thisMonth">This Month</a>
-                    <a href="#" class="dropdown-item" id="lastMonth">Last Month</a>
-                    <a href="#" class="dropdown-item" id="customDateRange">Custom Range</a>
+                    <a href="#" class="dropdown-item" id="todayDate">امروز</a>
+                    <a href="#" class="dropdown-item" id="yesterdayDate">دیروز</a>
+                    <a href="#" class="dropdown-item" id="lastSevenDays">۷ روز گذشته</a>
+                    <a href="#" class="dropdown-item" id="lastThirtyDays">۳۰ روز گذشته</a>
+                    <a href="#" class="dropdown-item" id="thisMonth">ماه جاری</a>
+                    <a href="#" class="dropdown-item" id="lastMonth">ماه قبل</a>
+                    <a href="#" class="dropdown-item" id="customDateRange">بازه انتخابی</a>
+                  </div>
+                </div>
+                <div class="omd-subheader__date-range">
+                  <button type="button" class="omd-subheader__date-range-btn btn btn-light text-info shadow-none border-0" id="dashboardCustomDateRangeBtn">
+                    <i class="fas fa-calendar-alt text-info"></i>
+                  </button>
+                  <div class="omd-subheader__date-range-menu omd-subheader__date-range-menu--ultra-wide font-size--08 date-range-slideIn" id="dashboardCustomDateRange">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-6">
+                          
+                          <div class="omd-subheader__range-from"></div>
+                        </div>
+                        <div class="col-6">
+                          
+                          <div class="omd-subheader__range-to"></div>
+                        </div>
+                      </div>
+                      <div class="row border-top mt-2">
+                        <div class="col text-right pt-3">
+                          <div class="text-muted d-inline mr-3 font-size--07" id="previewDateRange">
+                            <input class="omd-subheader__range-input border-0 text-center" id="dateRangeFrom" placeholder="From" disabled>
+                            <span> - </span>
+                            <input class="omd-subheader__range-input border-0 text-center" id="dateRangeTo" placeholder="To" disabled>
+                          </div>
+                          <button class="btn btn-sm btn-outline-gray font-size--07" id="dateRangePickerCancel">Cancel</button>
+                          <button class="btn btn-sm btn-primary font-size--07" id="dateRangePickerApply">Apply</button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

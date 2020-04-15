@@ -1,5 +1,6 @@
 .omd-subheader {
   position: fixed;
+  min-width: rem(252);
   z-index: z('subheader');
   top: 4rem;
   @include ltr {
@@ -15,17 +16,18 @@
   border-bottom: 1px solid $topbar-border-color;
   transition: left 0.3s ease-out;
 
-  &__title-area {
-    padding: 1rem 1.25rem !important;
-  }
-
   &__title {
-    margin: 0;
+    font-size: 0.8rem;
+    @include media-breakpoint-up(sm) {
+      font-size: 1rem;
+    }
   }
 
-  &__options-area {
-    padding: 0.75rem 1.25rem !important;
-    text-align: right;
+  &__title-area {
+    padding: 0.6rem 0.75rem !important;
+    @include media-breakpoint-up(sm) {
+      padding: 0.6rem 1.25rem !important;
+    }
   }
 
   &--recalc-width {
@@ -39,21 +41,79 @@
     }
   }
 
-  &__date-btn {
-    &:hover,
-    &:link,
-    &:focus,
-    &:visited,
-    &:active {
-      background-color: theme-color('light') !important;
-      border: none;
+  &__date-dropdown {
+    @include ltr {
+      margin-left: auto;
+    }
+    @include rtl {
+      margin-right: auto;
     }
   }
 
-  &__date-dropdown-menu {
+  &__date-btn {
+    font-size: 0.6rem;
+    @include media-breakpoint-up(sm) {
+      font-size: 0.8rem;
+    }
+    @include ltr {
+      border-radius: 0.25rem 0 0 0.25rem;
+    }
+    @include rtl {
+      border-radius: 0 0.25rem 0.25rem 0;
+    }
+  }
+
+  &__date-range-btn {
+    font-size: 0.6rem;
+    @include media-breakpoint-up(sm) {
+      font-size: 0.8rem;
+    }
+    @include ltr {
+      border-radius: 0 0.25rem 0.25rem 0;
+    }
+    @include rtl {
+      border-radius: 0.25rem 0 0 0.25rem;
+    }
+  }
+
+  &__date-range-menu {
+    position: absolute;
+    top: rem(53);
+    right: rem(5);
+    background: $white;
+    padding: 20px;
+    width: 220px;
+    border-radius: 0.25rem;
+    opacity: 0;
+    display: none;
+
+    &--show {
+      display: block;
+    }
+
+    @include media-breakpoint-up(sm) {
+      &--ultra-wide {
+        width: rem(495);
+      }
+    }
+    @include media-breakpoint-up(md) {
+      &--ultra-wide {
+        width: rem(690);
+      }
+    }
+    // @include media-breakpoint-up(xl) {
+    //   &--ultra-wide {
+    //     width: rem(925);
+    //   }
+    // }
+
     .dropdown-item {
       font-size: 0.8rem;
       color: $gray;
     }
+  }
+
+  &__range-input {
+    width: rem(80);
   }
 }

@@ -49,6 +49,17 @@
       }
     }
   },
+  "subheader": {
+    "options": {
+      "today": "امروز",
+      "yesterday": "دیروز",
+      "last-seven-days": "۷ روز گذشته",
+      "last-thirty-days": "۳۰ روز گذشته",
+      "this-month": "ماه جاری",
+      "last-month": "ماه قبل",
+      "custom-range": "بازه انتخابی"
+    }
+  },
   "menu": {
     "sidebar": {
       "direction": "left"

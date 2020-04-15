@@ -35,6 +35,24 @@
   animation-name: slideIn;
 }
 
+// Animation effect for Bootstrap dropdowns
+@keyframes dateRangeSlideIn {
+  0% {
+    top: rem(69);
+    opacity: 0;
+  }
+  100% {
+    top: rem(53);
+    opacity: 1;
+  }
+}
+
+.date-range-slideIn {
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  animation-name: dateRangeSlideIn;
+}
+
 // Scaling circle animation effect
 @keyframes scalingCircle {
   0% {
