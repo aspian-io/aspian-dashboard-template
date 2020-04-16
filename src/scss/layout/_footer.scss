@@ -1,4 +1,16 @@
-footer {
+.footer {
+  position: absolute;
+  bottom: 0;
   font-size: 0.7rem;
   width: 100%;
+  overflow: hidden;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 0.6rem;
+
+    &__copyright,
+    &__developer {
+      min-width: rem(180);
+    }
+  }
 }

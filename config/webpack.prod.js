@@ -12,7 +12,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
   entry: {
-    main: './src/js/main.js',
+    dashboard: './src/js/pages/dashboard/dashboard.js',
   },
   output: {
     path: path.join(__dirname, '../build'),
@@ -135,7 +135,7 @@ module.exports = {
     // The plugin will generate an HTML5 file for you that includes all your webpack bundles in the body using script tags
     new HtmlWebpackPlugin({
       //inject: false,
-      chunks: ['main'],
+      chunks: ['dashboard'],
       template: 'src/i18n/index.html',
       filename: 'index.html',
     }),

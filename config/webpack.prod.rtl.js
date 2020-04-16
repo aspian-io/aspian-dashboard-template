@@ -8,7 +8,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
   entry: {
-    'main-rtl': './src/js/main-rtl.js',
+    'dashboard-rtl': './src/js/pages/dashboard/dashboard-rtl.js',
   },
   output: {
     path: path.join(__dirname, '../build/fa'),
@@ -126,7 +126,7 @@ module.exports = {
     }),
     // The plugin will generate an HTML5 file for you that includes all your webpack bundles in the body using script tags
     new HtmlWebpackPlugin({
-      chunks: ['main-rtl'],
+      chunks: ['dashboard-rtl'],
       template: 'src/i18n/fa/index.html',
       filename: 'index.html',
     }),

@@ -5,8 +5,8 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
-    main: './src/js/main.js',
-    'main-rtl': './src/js/main-rtl.js',
+    dashboard: './src/js/pages/dashboard/dashboard.js',
+    'dashboard-rtl': './src/js/pages/dashboard/dashboard-rtl.js',
   },
   output: {
     path: path.join(__dirname, '../build'),
@@ -89,13 +89,13 @@ module.exports = {
     // The plugin will generate an HTML5 file for you that includes all your webpack bundles in the body using script tags
     new HtmlWebpackPlugin({
       //inject: false,
-      chunks: ['main'],
+      chunks: ['dashboard'],
       template: 'src/i18n/index.html',
       filename: 'index.html',
     }),
     new HtmlWebpackPlugin({
       //inject: false,
-      chunks: ['main-rtl'],
+      chunks: ['dashboard-rtl'],
       template: 'src/i18n/fa/index.html',
       filename: 'fa/index.html',
     }),

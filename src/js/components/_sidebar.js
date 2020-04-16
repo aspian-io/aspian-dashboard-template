@@ -29,8 +29,12 @@ const resetMinimizedSidebar = () => {
 $('.omd-sidebar__menu-link').click(function (e) {
   if ($(event.target).attr('data-toggle') !== 'collapse') {
     $('.omd-sidebar__submenu.collapse').collapse('hide');
-    // reset sidebar not being minimized anymore
-    resetMinimizedSidebar();
+    const windowWidth = $(window).width();
+
+    if (windowWidth < 992) {
+      // reset sidebar not being minimized anymore
+      resetMinimizedSidebar();
+    }
   }
 });
 
@@ -41,7 +45,12 @@ $('#sidebar_accordion').on('show.bs.collapse', function (e) {
     .find('.omd-sidebar__menu-arrow > i')
     .addClass('omd-sidebar__menu-arrow--expand');
 
-  resetMinimizedSidebar();
+  const windowWidth = $(window).width();
+
+  if (windowWidth < 992) {
+    // reset sidebar not being minimized anymore
+    resetMinimizedSidebar();
+  }
 });
 
 $('#sidebar_accordion').on('hide.bs.collapse', function (e) {
