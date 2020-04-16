@@ -50,7 +50,7 @@ $(document).ready(function () {
     navigator: {
       enabled: true,
       scroll: {
-        enabled: true,
+        enabled: false,
       },
       text: {
         btnNextText: '>',
@@ -104,7 +104,7 @@ $(document).ready(function () {
     navigator: {
       enabled: true,
       scroll: {
-        enabled: true,
+        enabled: false,
       },
       text: {
         btnNextText: '>',

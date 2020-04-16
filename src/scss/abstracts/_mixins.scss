@@ -1,5 +1,5 @@
 // input placholder styles
-@mixin input-placeholder {
+@mixin placeholder {
   &.placeholder {
     @content;
   }

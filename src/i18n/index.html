@@ -962,7 +962,7 @@
                 <!-- <span class="separator separator--breadcrumb"></span> -->
 
                 <div class="omd-subheader__date-dropdown dropdown">
-                  <button class="omd-subheader__date-btn btn btn-light text-info shadow-none border-0" id="dashboardDateRange" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="0, 10" data-placement="left" title="Select dashboard daterange">
+                  <button class="omd-subheader__date-btn btn btn-light text-info shadow-none border-0 text-truncate" id="dashboardDateRange" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="0, 10" data-placement="left" title="Select dashboard daterange">
                     <span class="text-info" id="selectedDateRange"></span>
                   </button>
 
@@ -973,31 +973,28 @@
                     <a href="#" class="dropdown-item" id="lastThirtyDays">Last 30 Days</a>
                     <a href="#" class="dropdown-item" id="thisMonth">This Month</a>
                     <a href="#" class="dropdown-item" id="lastMonth">Last Month</a>
-                    <a href="#" class="dropdown-item" id="customDateRange">Custom Range</a>
                   </div>
                 </div>
-                <div class="omd-subheader__date-range">
+                <div class="omd-subheader__date-range bg-light rounded">
                   <button type="button" class="omd-subheader__date-range-btn btn btn-light text-info shadow-none border-0" id="dashboardCustomDateRangeBtn">
                     <i class="fas fa-calendar-alt text-info"></i>
                   </button>
                   <div class="omd-subheader__date-range-menu omd-subheader__date-range-menu--ultra-wide font-size--08 date-range-slideIn" id="dashboardCustomDateRange">
                     <div class="container-fluid">
-                      <div class="row">
-                        <div class="col-6">
-                          
+                      <div class="omd-subheader__datepicker-wrapper row" id="datePickerWrapper">
+                        <div class="col-sm-6">
                           <div class="omd-subheader__range-from"></div>
                         </div>
-                        <div class="col-6">
-                          
+                        <div class="col-sm-6">
                           <div class="omd-subheader__range-to"></div>
                         </div>
                       </div>
                       <div class="row border-top mt-2">
-                        <div class="col text-right pt-3">
-                          <div class="text-muted d-inline mr-3 font-size--07" id="previewDateRange">
-                            <input class="omd-subheader__range-input border-0 text-center" id="dateRangeFrom" placeholder="From" disabled>
+                        <div class="col text-center text-sm-right pt-2 pt-sm-4">
+                          <div class="text-muted d-inline-block mb-2 mb-sm-0 mr-sm-3 font-size--07" id="previewDateRange">
+                            <input class="omd-subheader__range-input border-0 text-center" id="dateRangeFrom" disabled placeholder="From">
                             <span> - </span>
-                            <input class="omd-subheader__range-input border-0 text-center" id="dateRangeTo" placeholder="To" disabled>
+                            <input class="omd-subheader__range-input border-0 text-center" id="dateRangeTo" disabled placeholder="To">
                           </div>
                           <button class="btn btn-sm btn-outline-gray font-size--07" id="dateRangePickerCancel">Cancel</button>
                           <button class="btn btn-sm btn-primary font-size--07" id="dateRangePickerApply">Apply</button>

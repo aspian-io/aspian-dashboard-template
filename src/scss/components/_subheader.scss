@@ -52,6 +52,11 @@
 
   &__date-btn {
     font-size: 0.6rem;
+
+    @media only screen and (max-width: 350px) {
+      max-width: rem(120);
+      overflow: hidden;
+    }
     @include media-breakpoint-up(sm) {
       font-size: 0.8rem;
     }
@@ -79,10 +84,15 @@
   &__date-range-menu {
     position: absolute;
     top: rem(53);
-    right: rem(5);
+    @include ltr {
+      right: rem(5);
+    }
+    @include rtl {
+      left: rem(5);
+    }
     background: $white;
-    padding: 20px;
-    width: 220px;
+    padding-top: rem(10);
+    width: rem(235);
     border-radius: 0.25rem;
     opacity: 0;
     display: none;
@@ -91,9 +101,15 @@
       display: block;
     }
 
+    @media only screen and (max-height: 768px) {
+      height: rem(420);
+      overflow: hidden;
+    }
+
     @include media-breakpoint-up(sm) {
       &--ultra-wide {
         width: rem(495);
+        padding: rem(20);
       }
     }
     @include media-breakpoint-up(md) {
@@ -101,15 +117,18 @@
         width: rem(690);
       }
     }
-    // @include media-breakpoint-up(xl) {
-    //   &--ultra-wide {
-    //     width: rem(925);
-    //   }
-    // }
 
     .dropdown-item {
       font-size: 0.8rem;
       color: $gray;
+    }
+  }
+
+  &__datepicker-wrapper {
+    @media only screen and (max-height: 768px) {
+      position: relative;
+      height: rem(320);
+      overflow: hidden;
     }
   }
 

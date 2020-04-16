@@ -96,3 +96,9 @@
     border-radius: 0.25rem !important;
   }
 }
+
+.omd-subheader__range-input {
+  @include placeholder {
+    color: theme-color('light-gray');
+  }
+}

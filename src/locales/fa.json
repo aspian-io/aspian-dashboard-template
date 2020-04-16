@@ -50,14 +50,19 @@
     }
   },
   "subheader": {
+    "date-picker": {
+      "from": "از",
+      "to": "تا",
+      "apply": "تایید",
+      "cancel": "انصراف"
+    },
     "options": {
       "today": "امروز",
       "yesterday": "دیروز",
       "last-seven-days": "۷ روز گذشته",
       "last-thirty-days": "۳۰ روز گذشته",
       "this-month": "ماه جاری",
-      "last-month": "ماه قبل",
-      "custom-range": "بازه انتخابی"
+      "last-month": "ماه قبل"
     }
   },
   "menu": {

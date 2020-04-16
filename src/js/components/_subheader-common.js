@@ -1,3 +1,5 @@
+import PerfectScrollbar from 'perfect-scrollbar';
+
 // Recalculate topbar width based on new viewport size
 export function addSubheaderRecalcWidth() {
   $('.omd-subheader').addClass('omd-subheader--recalc-width');
@@ -52,3 +54,24 @@ $('body')
       );
     }
   });
+
+$(document).ready(function () {
+  const windowHeight = $(window).height();
+
+  if (windowHeight < 768) {
+    // Perfect-scrollbar for subheader date range picker dropdown
+    // for viewport height less than 768
+    const dateRangePs = new PerfectScrollbar('#datePickerWrapper');
+  }
+});
+
+// tracking window resizing
+$(window).resize(function () {
+  const windowHeight = $(window).height();
+  // check if Perfect-scrollbar hasn't been set yet
+  if (windowHeight < 768) {
+    if (!$('#datePickerWrapper').hasClass('ps')) {
+      const dateRangePs = new PerfectScrollbar('#datePickerWrapper');
+    }
+  }
+});

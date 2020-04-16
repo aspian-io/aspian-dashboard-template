@@ -50,14 +50,19 @@
     }
   },
   "subheader": {
+    "date-picker": {
+      "from": "From",
+      "to": "To",
+      "apply": "Apply",
+      "cancel": "Cancel"
+    },
     "options": {
       "today": "Today",
       "yesterday": "Yesterday",
       "last-seven-days": "Last 7 Days",
       "last-thirty-days": "Last 30 Days",
       "this-month": "This Month",
-      "last-month": "Last Month",
-      "custom-range": "Custom Range"
+      "last-month": "Last Month"
     }
   },
   "menu": {
