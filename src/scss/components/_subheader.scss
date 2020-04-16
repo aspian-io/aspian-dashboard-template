@@ -102,8 +102,12 @@
     }
 
     @media only screen and (max-height: 768px) {
-      height: rem(420);
+      min-height: rem(375);
       overflow: hidden;
+    }
+
+    @include media-breakpoint-down(sm) {
+      min-height: rem(375);
     }
 
     @include media-breakpoint-up(sm) {
@@ -125,9 +129,9 @@
   }
 
   &__datepicker-wrapper {
-    @media only screen and (max-height: 768px) {
+    @include media-breakpoint-down(sm) {
       position: relative;
-      height: rem(320);
+      height: rem(270);
       overflow: hidden;
     }
   }
