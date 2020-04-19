@@ -11,6 +11,7 @@ const makeSidebarMinimized = () => {
     .addClass('l-container--sidebar-minimized')
     .data('minimized', true)
     .data('hover-allowed', true);
+  $('.l-body').addClass('l-body--minimized-padding');
   TopbarFn.addTopbarRecalcWidth();
   SubheaderFn.addSubheaderRecalcWidth();
 };
@@ -21,6 +22,7 @@ const resetMinimizedSidebar = () => {
     .removeClass('l-container--sidebar-minimized')
     .data('minimized', false)
     .data('hover-allowed', false);
+  $('.l-body').removeClass('l-body--minimized-padding');
   TopbarFn.removeTopbarRecalcWidth();
   SubheaderFn.removeSubheaderRecalcWidth();
 };
@@ -76,6 +78,7 @@ $('#sidebar_button').click(function (e) {
 $('#sidebar_nav').on('mouseenter', function (e) {
   if ($('.l-container--sidebar').data('hover-allowed') === true) {
     $('.l-container--sidebar').removeClass('l-container--sidebar-minimized');
+    $('.l-body').removeClass('l-body--minimized-padding');
     TopbarFn.removeTopbarRecalcWidth();
     SubheaderFn.removeSubheaderRecalcWidth();
   }
@@ -84,6 +87,7 @@ $('#sidebar_nav').on('mouseenter', function (e) {
 $('#sidebar_nav').on('mouseleave', function (e) {
   if ($('.l-container--sidebar').data('hover-allowed') === true) {
     $('.l-container--sidebar').addClass('l-container--sidebar-minimized');
+    $('.l-body').addClass('l-body--minimized-padding');
     TopbarFn.addTopbarRecalcWidth();
     SubheaderFn.addSubheaderRecalcWidth();
   }

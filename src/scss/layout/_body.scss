@@ -2,4 +2,21 @@
   line-height: 1.5;
   font-weight: 300;
   background-color: $body-bg;
+  transition: padding 0.3s ease-out;
+
+  @include ltr {
+    padding-left: $sidebar-width;
+  }
+  @include rtl {
+    padding-right: $sidebar-width;
+  }
+
+  &--minimized-padding {
+    @include ltr {
+      padding-left: $sidebar-minimized-width;
+    }
+    @include rtl {
+      padding-right: $sidebar-minimized-width;
+    }
+  }
 }

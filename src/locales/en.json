@@ -210,6 +210,30 @@
       "delete": "Delete"
     }
   },
+  "content": {
+    "summary-card": {
+      "income": "Income",
+      "income-value": "$1,300",
+      "income-assessment-number": "-3.25%",
+      "income-assessment-text": "Less sales than usual",
+      "revenue": "Revenue",
+      "revenue-value": "$5,300",
+      "revenue-assessment-number": "-3.25%",
+      "revenue-assessment-text": "Less earnings than usual",
+      "orders": "Orders",
+      "order-value": "300",
+      "order-assessment-number": "1.25%",
+      "order-assessment-text": "More orders than usual",
+      "new-users": "New Users",
+      "new-user-value": "130",
+      "new-user-assessment-number": "2.25",
+      "new-user-assessment-text": "More signups than usual",
+      "font-size": ""
+    },
+    "charts": {
+      "income-revenue": "Income - Revenue"
+    }
+  },
   "footer": {
     "copyright": "Copyright",
     "made-with": "Made with",

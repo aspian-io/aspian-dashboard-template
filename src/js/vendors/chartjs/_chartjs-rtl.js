@@ -7,28 +7,28 @@ $(document).ready(function () {
 
     data: {
       labels: [
-        'January',
-        'February',
-        'March',
-        'April',
-        'May',
-        'Jun',
-        'July',
-        'August',
-        'September',
-        'October',
-        'November',
-        'December',
+        'فروردین',
+        'اردیبهشت',
+        'خرداد',
+        'تیر',
+        'مرداد',
+        'شهریور',
+        'مهر',
+        'آبان',
+        'آذر',
+        'دی',
+        'بهمن',
+        'اسفند',
       ],
       datasets: [
         {
-          label: 'Income',
+          label: 'درآمد خالص',
           borderColor: '#5d78ff',
           backgroundColor: '#5d78ff',
           data: [3, 2, 3, 5, 6, 5, 4, 6, 9, 10, 8, 9],
         },
         {
-          label: 'Revenue',
+          label: 'درآمد ناخالص',
           borderColor: '#f2f3f8',
           backgroundColor: '#f2f3f8',
           data: [5, 4, 10, 15, 16, 12, 10, 13, 20, 22, 18, 20],
@@ -38,10 +38,8 @@ $(document).ready(function () {
     options: {
       maintainAspectRatio: false,
       tooltips: {
-        titleFontFamily: "'Poppins', Helvetica, sans-serif",
-        titleFontSize: 10,
-        bodyFontFamily: "'Poppins', Helvetica, sans-serif",
-        bodyFontSize: 10,
+        titleFontFamily: "'Vazir', sans-serif",
+        bodyFontFamily: "'Vazir', sans-serif",
       },
       legend: {
         display: false,
@@ -50,25 +48,26 @@ $(document).ready(function () {
         yAxes: [
           {
             //display: false,
+            position: 'right',
             gridLines: {
               display: false,
             },
             ticks: {
               beginAtZero: true,
-              fontFamily: "'Poppins', Helvetica, sans-serif",
-              fontSize: 10,
             },
           },
         ],
         xAxes: [
           {
             //display: false,
+            offset: true,
+            reverse: true,
             gridLines: {
               display: false,
             },
             ticks: {
-              fontFamily: "'Poppins', Helvetica, sans-serif",
-              fontSize: 10,
+              reverse: true,
+              fontFamily: "'Vazir', sans-serif",
             },
           },
         ],

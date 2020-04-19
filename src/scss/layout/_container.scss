@@ -1,7 +1,15 @@
 .l-container {
   &--sidebar {
-    width: $sidebar-width;
+    position: absolute;
+    top: 0;
+    @include ltr {
+      left: 0;
+    }
+    @include rtl {
+      right: 0;
+    }
     height: 100vh;
+    width: $sidebar-width;
     overflow: hidden;
     transition: width 0.3s ease-out;
 

@@ -9,9 +9,9 @@
     <link rel="mask-icon" href="../assets/img/safari-pinned-tab.svg" color="#5bbad5">
     <title>ASPIAN Dashboard</title>
   </head>
-  <body class="l-body">
+  <body class="preload l-body">
     <div class="l-container container-fluid">
-      <div class="row">
+      <div class="wrapper row">
         <!-- begin::sidebar -->
         <div class="l-container l-container--sidebar">
           <div class="omd-sidebar" id="sidebar_nav">
@@ -623,7 +623,7 @@
         <!-- end::sidebar -->
 
         <!-- begin::page content -->
-        <div class="col px-0">
+        <div class="wrapper__page-content col px-0">
           <!-- begin::header -->
           <!-- begin::topbar -->
           <header class="omd-topbar row no-gutters bg-white">
@@ -953,7 +953,6 @@
           <!-- end::topbar -->
           <!-- end::header -->
 
-
           <!-------------------------------------------------------->
           <!-------------------------------------------------------->
           <!--------------------- begin::main ---------------------->
@@ -984,7 +983,7 @@
                   <button type="button" class="omd-subheader__date-range-btn btn btn-light text-info shadow-none border-0" id="dashboardCustomDateRangeBtn">
                     <i class="fas fa-calendar-alt text-info"></i>
                   </button>
-                  <div class="omd-subheader__date-range-menu omd-subheader__date-range-menu--ultra-wide font-size--08 date-range-slideIn" id="dashboardCustomDateRange">
+                  <div class="omd-subheader__date-range-menu omd-subheader__date-range-menu--ultra-wide font-size--08 date-range-slideIn shadow" id="dashboardCustomDateRange">
                     <div class="container-fluid">
                       <div class="omd-subheader__datepicker-wrapper row" id="datePickerWrapper">
                         <div class="col-sm-6">
@@ -1012,12 +1011,107 @@
             </div>
             <!-- end::subheader -->
             <!-- begin::content -->
-            <div class="wrapper__main-content main-content row"></div>
-            <div class="row"></div>
-            <div class="row"></div>
-            <div class="row"></div>
-            <div class="row"></div>
-            <div class="row"></div>
+            <div class="row">
+               <!-- begin::summary -->
+              <div class="omd-summary col-lg-6 col-xxl-5">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="omd-summary__card card mb-4 bg-info text-white border-0">
+                      <div class="card-body">
+                        <div class="row mb-2 align-items-center">
+                          <div class="col">
+                            <h6 class="card-title m-0">Income</h6></div>
+                          <div class="omd-summary__icon-wrapper col-auto">
+                            <i class="omd-summary__icon fas fa-funnel-dollar"></i>
+                          </div>
+                        </div>
+                        <h2 class="mb-3 ">$1,300</h2>
+                        <div class="omd-summary__conclusion omd-summary__conclusion--bg-info font-size--07 text-white px-2 rounded text-truncate">
+                          <span class="text-danger bg-white rounded px-1 mr-1">
+                            <i class="fas fa-arrow-down"></i>
+                            <span>-3.25%</span>
+                          </span>
+                          <span>Less sales than usual</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-4 mb-lg-0 bg-warning text-white border-0">
+                      <div class="card-body">
+                        <div class="row mb-2 align-items-center">
+                          <div class="col">
+                            <h6 class="card-title m-0">Orders</h6></div>
+                          <div class="omd-summary__icon-wrapper col-auto">
+                            <i class="omd-summary__icon fas fa-dolly"></i>
+                          </div>
+                        </div>
+                        <h2 class="mb-3">300</h2>
+                        <div class="omd-summary__conclusion omd-summary__conclusion--bg-warning font-size--07 text-white px-2 rounded text-truncate">
+                          <span class="text-success bg-white rounded px-1 mr-1">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>1.25%</span>
+                          </span>
+                          <span>More orders than usual</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card mb-4 bg-success text-white border-0">
+                      <div class="card-body">
+                        <div class="row mb-2 align-items-center">
+                          <div class="col">
+                            <h6 class="card-title m-0">Revenue</h6></div>
+                          <div class="omd-summary__icon-wrapper col-auto">
+                            <i class="omd-summary__icon fas fa-dollar-sign"></i>
+                          </div>
+                        </div>
+                        <h2 class="mb-3 ">$5,300</h2>
+                        <div class="omd-summary__conclusion omd-summary__conclusion--bg-success font-size--07 text-white px-2 rounded text-truncate">
+                          <span class="text-danger bg-white rounded px-1 mr-1">
+                            <i class="fas fa-arrow-down"></i>
+                            <span>-3.25%</span>
+                          </span>
+                          <span>Less earnings than usual</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-4 mb-lg-0 bg-danger text-white border-0">
+                      <div class="card-body">
+                        <div class="row mb-2 align-items-center">
+                          <div class="col">
+                            <h6 class="card-title m-0">New Users</h6></div>
+                          <div class="omd-summary__icon-wrapper col-auto">
+                            <i class="omd-summary__icon fas fa-user"></i>
+                          </div>
+                        </div>
+                        <h2 class="mb-3">130</h2>
+                        <div class="omd-summary__conclusion omd-summary__conclusion--bg-danger font-size--07 text-white px-2 rounded text-truncate">
+                          <span class="text-success bg-white rounded px-1 mr-1">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>2.25</span>
+                          </span>
+                          <span>More signups than usual</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end::summary -->
+              <!-- begin::income/revenue chart -->
+              <div class="col-lg-6 col-xxl-7">
+                <div class="card border-0 bg-white h-100">
+                  <div class="card-header bg-white border-0">
+                    <h5 class="card-title m-0 font-size--08">Income - Revenue</h5>
+                    <div class="card-actions"></div>
+                  </div>
+                  <div class="card-body">
+                      <canvas id="grossIncomeChart"></canvas>
+                  </div>
+                </div>
+              </div>
+              <!-- end::income/revenue chart -->
+            </div>
             <!-- end::content -->
           </main>
           <!-------------------------------------------------------->
@@ -1025,7 +1119,6 @@
           <!---------------------- end::main ----------------------->
           <!-------------------------------------------------------->
           <!-------------------------------------------------------->
-
 
           <!-- begin::chat -->
           <div id="chatPanel" class="omd-chat l-container l-container--sidebar-right shadow">

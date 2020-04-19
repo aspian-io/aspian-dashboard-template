@@ -6,15 +6,16 @@
   @include ltr {
     right: 0;
     left: 16.5rem;
+    transition: left 0.3s ease-out;
   }
   @include rtl {
     left: 0;
     right: 16.5rem;
+    transition: right 0.3s ease-out;
   }
   height: 3.3rem;
   background-color: $white;
   border-bottom: 1px solid $topbar-border-color;
-  transition: left 0.3s ease-out;
 
   &__title {
     font-size: 0.8rem;

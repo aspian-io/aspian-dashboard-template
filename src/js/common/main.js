@@ -4,7 +4,8 @@ import 'typeface-poppins';
 import '../../scss/common/main.scss';
 // import common chunks
 import './common';
-
+// custom js
+import '../base/_utilities';
 // mark.js chat search implementation to jump to and highlight search results
 import '../vendors/jquery-finder/_chatSearch';
 // emoji-button.js emoji picker plugin implementation

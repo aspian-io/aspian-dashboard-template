@@ -210,6 +210,30 @@
       "delete": "حذف"
     }
   },
+  "content": {
+    "summary-card": {
+      "income": "درآمد خالص",
+      "income-value": "۲٫۲۰۰٫۰۰۰ تومان",
+      "income-assessment-number": "-۳/۲۵٪",
+      "income-assessment-text": "فروش کمتر از حد معمول",
+      "revenue": "درآمد ناخالص",
+      "revenue-value": "۱۲٫۰۰۰٫۰۰۰ تومان",
+      "revenue-assessment-number": "-۳/۲۵٪",
+      "revenue-assessment-text": "درآمد کمتر از حد معمول",
+      "orders": "سفارشات",
+      "order-value": "۳۰۰",
+      "order-assessment-number": "۱/۲۵٪",
+      "order-assessment-text": "سفارشات بیش از حد معمول",
+      "new-users": "کاربران جدید",
+      "new-user-value": "۱۳۰",
+      "new-user-assessment-number": "۲/۲۵",
+      "new-user-assessment-text": "ثبت نام بیشتر از حد معمول",
+      "font-size": "font-size--1-5"
+    },
+    "charts": {
+      "income-revenue": "درآمد خالص - ناخالص"
+    }
+  },
   "footer": {
     "copyright": "کپی رایت",
     "made-with": "تولید شده با",

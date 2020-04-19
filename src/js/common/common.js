@@ -16,8 +16,8 @@ import '../components/_subheader-common';
 // importing dropzone
 import '../vendors/dropzone/_dropzone';
 
-// Custom js
-import '../base/_utilities';
+// common utilities
+import '../base/_common-utils';
 
 // Imported media files
 import './importedMediaFiles';
