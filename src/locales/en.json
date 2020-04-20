@@ -232,6 +232,125 @@
     },
     "charts": {
       "income-revenue": "Income - Revenue"
+    },
+    "datatables": {
+      "title": "Top Selling Products",
+      "thead": {
+        "code": "Code",
+        "name": "Name",
+        "status": "Status",
+        "tickets": "Tickets",
+        "sales": "Sales",
+        "price": "Price"
+      },
+      "tbody": {
+        "badge": {
+          "in-stock": "In Stock",
+          "out-of-stock": "Out of Stock"
+        },
+        "rec1": {
+          "name": "USB Cable",
+          "tickets": "61",
+          "sales": "9532",
+          "price": "$320,800"
+        },
+        "rec2": {
+          "name": "Memory Card",
+          "tickets": "12",
+          "sales": "9432",
+          "price": "$170,750"
+        },
+        "rec3": {
+          "name": "Intel CPU",
+          "tickets": "1",
+          "sales": "9100",
+          "price": "$570,400"
+        },
+        "rec4": {
+          "name": "Screen Protector",
+          "tickets": "2",
+          "sales": "8911",
+          "price": "$210,200"
+        },
+        "rec5": {
+          "name": "Webcam",
+          "tickets": "14",
+          "sales": "8821",
+          "price": "$430,100"
+        },
+        "rec6": {
+          "name": "External SSD",
+          "tickets": "13",
+          "sales": "8700",
+          "price": "$321,100"
+        },
+        "rec7": {
+          "name": "Mouse",
+          "tickets": "11",
+          "sales": "8654",
+          "price": "$432,200"
+        },
+        "rec8": {
+          "name": "Keyboard",
+          "tickets": "3",
+          "sales": "8600",
+          "price": "$534,100"
+        },
+        "rec9": {
+          "name": "Monitor",
+          "tickets": "7",
+          "sales": "8400",
+          "price": "$654,200"
+        },
+        "rec10": {
+          "name": "Monitor Arm",
+          "tickets": "9",
+          "sales": "8321",
+          "price": "$432,800"
+        },
+        "rec11": {
+          "name": "Headset",
+          "tickets": "17",
+          "sales": "8200",
+          "price": "$234,100"
+        },
+        "rec12": {
+          "name": "Speaker",
+          "tickets": "21",
+          "sales": "7700",
+          "price": "$534,400"
+        },
+        "rec13": {
+          "name": "CPU Fan",
+          "tickets": "10",
+          "sales": "7654",
+          "price": "$123,200"
+        },
+        "rec14": {
+          "name": "USB Fan",
+          "tickets": "6",
+          "sales": "7500",
+          "price": "$222,800"
+        },
+        "rec15": {
+          "name": "Memory Card Reader",
+          "tickets": "12",
+          "sales": "7431",
+          "price": "$432,200"
+        },
+        "rec16": {
+          "name": "CD-R Discs",
+          "tickets": "12",
+          "sales": "7300",
+          "price": "$111,800"
+        },
+        "rec17": {
+          "name": "DVD-R Discs",
+          "tickets": "16",
+          "sales": "7212",
+          "price": "$664,600"
+        }
+      }
     }
   },
   "footer": {

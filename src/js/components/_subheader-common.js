@@ -47,7 +47,6 @@ $('#dateRangePickerCancel').on('click', function () {
 $('body')
   .add('#dashboardDateRange')
   .on('click', function (e) {
-    console.log('fired this');
     if ($('.omd-subheader__date-range').has(e.target).length === 0) {
       $('#dashboardCustomDateRange').removeClass(
         'omd-subheader__date-range-menu--show'

@@ -1,3 +1,10 @@
+// Loading Datatables style
+@import '~datatables.net-bs4/css/dataTables.bootstrap4.css';
+
+#sampleDataTable_paginate {
+  padding: 0.6rem 1.25rem;
+}
+
 .omd-summary {
   &__icon-wrapper {
     position: absolute !important;
