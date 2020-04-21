@@ -2068,9 +2068,9 @@
               <!-- begin::income/revenue chart -->
               <div class="col-lg-6 col-xxl-7">
                 <div class="card border-0 bg-white h-100">
-                  <div class="card-header bg-white border-0">
+                  <div class="card-header bg-white border-0 pt-4">
                     <h5
-                      class="card-title m-0 font-size--08"
+                      class="card-title m-0 font-size--1 text-dark"
                       data-t="content.charts.income-revenue"
                     ></h5>
                     <div class="card-actions"></div>
@@ -2087,9 +2087,9 @@
               <div class="col-12 col-lg-8">
                 <!-- begin::datatabels card -->
                 <div class="card border-0 bg-white h-100">
-                  <div class="card-header bg-white border-0">
+                  <div class="card-header bg-white border-0 pt-4">
                     <h5
-                      class="card-title m-0 font-size--08"
+                      class="card-title m-0 font-size--1 text-dark"
                       data-t="content.datatables.title"
                     ></h5>
                     <div class="card-actions"></div>
@@ -2421,6 +2421,28 @@
                   </div>
                 </div>
                 <!-- end::datatables card -->
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="omd-doughnut card border-0 bg-white h-100">
+                  <div class="card-header bg-white border-0 pt-4">
+                    <h5
+                      class="card-title m-0 font-size--1 text-dark"
+                      data-t="content.charts.revenue-breakdown"
+                    ></h5>
+                    <p
+                      class="font-size--08 mt-1 text-muted"
+                      data-t="content.charts.revenue-breakdown-desc"
+                    ></p>
+                    <div class="card-actions"></div>
+                  </div>
+                  <div class="omd-doughnut__body card-body pt-0 pb-4 px-5">
+                    <canvas
+                      id="revenueBreakdownByCities"
+                      width="50"
+                      height="50"
+                    ></canvas>
+                  </div>
+                </div>
               </div>
             </div>
             <!-- end::content -->

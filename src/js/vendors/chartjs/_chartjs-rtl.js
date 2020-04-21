@@ -74,4 +74,39 @@ $(document).ready(function () {
       },
     },
   });
+
+  // doughnut chart
+  const ctx2 = document
+    .getElementById('revenueBreakdownByCities')
+    .getContext('2d');
+  var myDoughnutChart = new Chart(ctx2, {
+    type: 'doughnut',
+    data: {
+      datasets: [
+        {
+          data: [10, 20, 30, 40, 50],
+          backgroundColor: [
+            '#fd397a',
+            '#ffb822',
+            '#5d78ff',
+            '#0abb87',
+            '#6f42c1',
+          ],
+        },
+      ],
+      // These labels appear in the legend and in the tooltips when hovering different arcs
+      labels: ['تهران', 'مشهد', 'اصفهان', 'شیراز', 'کیش'],
+    },
+    options: {
+      tooltips: {
+        titleFontFamily: "'Vazir', sans-serif",
+        bodyFontFamily: "'Vazir', sans-serif",
+      },
+      maintainAspectRatio: false,
+      cutoutPercentage: 50,
+      legend: {
+        display: false,
+      },
+    },
+  });
 });

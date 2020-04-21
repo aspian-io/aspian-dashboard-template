@@ -1,8 +1,9 @@
 import Chart from 'chart.js';
 
 $(document).ready(function () {
-  const ctx = document.getElementById('grossIncomeChart').getContext('2d');
-  const myChart = new Chart(ctx, {
+  // Line chart
+  const ctx1 = document.getElementById('grossIncomeChart').getContext('2d');
+  const myChart = new Chart(ctx1, {
     type: 'line',
 
     data: {
@@ -72,6 +73,47 @@ $(document).ready(function () {
             },
           },
         ],
+      },
+    },
+  });
+
+  // doughnut chart
+  const ctx2 = document
+    .getElementById('revenueBreakdownByCities')
+    .getContext('2d');
+  var myDoughnutChart = new Chart(ctx2, {
+    type: 'doughnut',
+    data: {
+      datasets: [
+        {
+          data: [10, 20, 30, 40, 50],
+          backgroundColor: [
+            '#fd397a',
+            '#ffb822',
+            '#5d78ff',
+            '#0abb87',
+            '#6f42c1',
+          ],
+        },
+      ],
+      // These labels appear in the legend and in the tooltips when hovering different arcs
+      labels: [
+        'Los Angeles',
+        'New York',
+        'Washington, D.C.',
+        'Texas',
+        'Boston',
+      ],
+    },
+    options: {
+      tooltips: {
+        titleFontFamily: "'Poppins', Helvetica, sans-serif",
+        bodyFontFamily: "'Poppins', Helvetica, sans-serif",
+      },
+      maintainAspectRatio: false,
+      cutoutPercentage: 50,
+      legend: {
+        display: false,
       },
     },
   });

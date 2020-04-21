@@ -21,3 +21,9 @@
     font-size: 2rem;
   }
 }
+
+.omd-doughnut {
+  &__body {
+    max-height: rem(325);
+  }
+}

@@ -231,7 +231,9 @@
       "font-size": "font-size--1-5"
     },
     "charts": {
-      "income-revenue": "درآمد خالص - ناخالص"
+      "income-revenue": "درآمد خالص - ناخالص",
+      "revenue-breakdown": "تحلیل درآمد",
+      "revenue-breakdown-desc": "تحلیل درآمد بر اساس ۵ شهر با خرید بالا"
     },
     "datatables": {
       "title": "پرفروش ترین ها",

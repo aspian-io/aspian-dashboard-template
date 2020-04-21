@@ -231,7 +231,9 @@
       "font-size": ""
     },
     "charts": {
-      "income-revenue": "Income - Revenue"
+      "income-revenue": "Income - Revenue",
+      "revenue-breakdown": "Revenue Breakdown",
+      "revenue-breakdown-desc": "Revenue breakdown by top 5 cities"
     },
     "datatables": {
       "title": "Top Selling Products",
