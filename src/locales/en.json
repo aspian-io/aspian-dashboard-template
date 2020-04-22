@@ -353,6 +353,40 @@
           "price": "$664,600"
         }
       }
+    },
+    "recent-activities": {
+      "title": "Recent Activites",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia unde maxime ipsum deserunt ut dolorem?",
+      "time1": "11:00",
+      "time2": "13:00",
+      "time3": "14:45",
+      "time4": "17:00",
+      "time5": "17:12",
+      "time6": "18:00",
+      "time7": "19:00",
+      "time8": "19:30"
+    },
+    "support-tickets": {
+      "title": "Support Tickets",
+      "name1": "Sarah Lopez",
+      "name2": "Johny Ruiz",
+      "name3": "Judy Vasquez",
+      "name4": "Craig Lopez",
+      "name5": "Gloria Peters",
+      "name6": "John Anderson",
+      "time1": "2 days ago",
+      "time2": "3 days ago",
+      "time3": "Yesterday",
+      "time4": "1 week ago",
+      "time5": "3 weeks ago",
+      "time6": "1 month ago",
+      "status1": "Pending",
+      "status2": "Open",
+      "status3": "Closed",
+      "status4": "Pending",
+      "status5": "Closed",
+      "status6": "Open",
+      "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, odio."
     }
   },
   "footer": {

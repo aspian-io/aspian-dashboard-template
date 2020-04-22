@@ -2068,7 +2068,7 @@
               <!-- begin::income/revenue chart -->
               <div class="col-lg-6 col-xxl-7">
                 <div class="card border-0 bg-white h-100">
-                  <div class="card-header bg-white border-0 pt-4">
+                  <div class="card-header bg-white border-0 pt-3">
                     <h5
                       class="card-title m-0 font-size--1 text-dark"
                       data-t="content.charts.income-revenue"
@@ -2083,11 +2083,11 @@
               <!-- end::income/revenue chart -->
             </div>
 
-            <div class="row mb-4">
-              <div class="col-12 col-lg-8">
+            <div class="row">
+              <div class="col-12 col-lg-8 mb-4">
                 <!-- begin::datatabels card -->
                 <div class="card border-0 bg-white h-100">
-                  <div class="card-header bg-white border-0 pt-4">
+                  <div class="card-header bg-white border-0 pt-3">
                     <h5
                       class="card-title m-0 font-size--1 text-dark"
                       data-t="content.datatables.title"
@@ -2422,9 +2422,9 @@
                 </div>
                 <!-- end::datatables card -->
               </div>
-              <div class="col-12 col-lg-4">
+              <div class="col-12 col-lg-4 mb-4">
                 <div class="omd-doughnut card border-0 bg-white h-100">
-                  <div class="card-header bg-white border-0 pt-4">
+                  <div class="card-header bg-white border-0 pt-3">
                     <h5
                       class="card-title m-0 font-size--1 text-dark"
                       data-t="content.charts.revenue-breakdown"
@@ -2436,11 +2436,334 @@
                     <div class="card-actions"></div>
                   </div>
                   <div class="omd-doughnut__body card-body pt-0 pb-4 px-5">
-                    <canvas
-                      id="revenueBreakdownByCities"
-                      width="50"
-                      height="50"
-                    ></canvas>
+                    <canvas id="revenueBreakdownByCities"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 mb-4">
+                <div class="card border-0 bg-white h-100">
+                  <div class="card-header bg-white pt-3 border-light">
+                    <h5
+                      class="card-title mb-2 font-size--1 text-dark"
+                      data-t="content.recent-activities.title"
+                    ></h5>
+                    <div class="card-actions"></div>
+                  </div>
+                  <div class="wrapper__timeline card-body px-4 my-4">
+                    <div class="omd-timeline">
+                      <div class="omd-timeline__items pr-3" id="timeLineWidget">
+                        <div class="omd-timeline__item">
+                          <span
+                            class="omd-timeline__item-time"
+                            data-t="content.recent-activities.time1"
+                          ></span>
+                          <div class="omd-timeline__item-circle">
+                            <i class="fas fa-genderless text-danger"></i>
+                          </div>
+                          <div
+                            class="omd-timeline__item-text"
+                            data-t="content.recent-activities.text"
+                          ></div>
+                        </div>
+                        <div class="omd-timeline__item">
+                          <span
+                            class="omd-timeline__item-time"
+                            data-t="content.recent-activities.time2"
+                          ></span>
+                          <div class="omd-timeline__item-circle">
+                            <i class="fas fa-genderless text-primary"></i>
+                          </div>
+                          <div
+                            class="omd-timeline__item-text"
+                            data-t="content.recent-activities.text"
+                          ></div>
+                        </div>
+                        <div class="omd-timeline__item">
+                          <span
+                            class="omd-timeline__item-time"
+                            data-t="content.recent-activities.time3"
+                          ></span>
+                          <div class="omd-timeline__item-circle">
+                            <i class="fas fa-genderless text-success"></i>
+                          </div>
+                          <div
+                            class="omd-timeline__item-text"
+                            data-t="content.recent-activities.text"
+                          ></div>
+                        </div>
+                        <div class="omd-timeline__item">
+                          <span
+                            class="omd-timeline__item-time"
+                            data-t="content.recent-activities.time4"
+                          ></span>
+                          <div class="omd-timeline__item-circle">
+                            <i class="fas fa-genderless text-warning"></i>
+                          </div>
+                          <div
+                            class="omd-timeline__item-text"
+                            data-t="content.recent-activities.text"
+                          ></div>
+                        </div>
+                        <div class="omd-timeline__item">
+                          <span
+                            class="omd-timeline__item-time"
+                            data-t="content.recent-activities.time5"
+                          ></span>
+                          <div class="omd-timeline__item-circle">
+                            <i class="fas fa-genderless text-danger"></i>
+                          </div>
+                          <div
+                            class="omd-timeline__item-text"
+                            data-t="content.recent-activities.text"
+                          ></div>
+                        </div>
+                        <div class="omd-timeline__item">
+                          <span
+                            class="omd-timeline__item-time"
+                            data-t="content.recent-activities.time6"
+                          ></span>
+                          <div class="omd-timeline__item-circle">
+                            <i class="fas fa-genderless text-danger"></i>
+                          </div>
+                          <div
+                            class="omd-timeline__item-text"
+                            data-t="content.recent-activities.text"
+                          ></div>
+                        </div>
+                        <div class="omd-timeline__item">
+                          <span
+                            class="omd-timeline__item-time"
+                            data-t="content.recent-activities.time7"
+                          ></span>
+                          <div class="omd-timeline__item-circle">
+                            <i class="fas fa-genderless text-primary"></i>
+                          </div>
+                          <div
+                            class="omd-timeline__item-text"
+                            data-t="content.recent-activities.text"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mb-4">
+                <div class="card border-0 bg-white h-100">
+                  <div class="card-header bg-white pt-3 border-light">
+                    <h5
+                      class="card-title mb-2 font-size--1 text-dark"
+                      data-t="content.support-tickets.title"
+                    ></h5>
+                    <div class="card-actions"></div>
+                  </div>
+                  <div class="card-body p-4">
+                    <ul
+                      class="omd-mediaObjList list-group list-group-flush pr-2"
+                      id="mediaObjListWidget"
+                    >
+                      <li class="list-group-item border-light">
+                        <a href="#" class="text-reset text-decoration-none">
+                          <div class="media">
+                            <img
+                              src="../assets/img/avatars/fem06.png"
+                              class="omd-mediaObjList__avatar mr-3"
+                              alt=""
+                            />
+                            <div class="media-body text-muted font-size--08">
+                              <div class="d-flex align-items-center">
+                                <div>
+                                  <h5
+                                    class="mt-0 font-size--09 font-weight--500 m-0 mt-1"
+                                    data-t="content.support-tickets.name1"
+                                  ></h5>
+                                  <small
+                                    class="text-light-gray"
+                                    data-t="content.support-tickets.time1"
+                                  ></small>
+                                </div>
+                                <span
+                                  class="text-info font-weight--500 ml-auto"
+                                  data-t="content.support-tickets.status1"
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+                          <p
+                            class="text-light-gray font-size--08 mt-2"
+                            data-t="content.support-tickets.text"
+                          ></p>
+                        </a>
+                      </li>
+                      <li class="list-group-item border-light">
+                        <a href="#" class="text-reset text-decoration-none">
+                          <div class="media">
+                            <img
+                              src="../assets/img/avatars/male06.png"
+                              class="omd-mediaObjList__avatar mr-3"
+                              alt=""
+                            />
+                            <div class="media-body text-muted font-size--08">
+                              <div class="d-flex align-items-center">
+                                <div>
+                                  <h5
+                                    class="mt-0 font-size--09 font-weight--500 m-0 mt-1"
+                                    data-t="content.support-tickets.name2"
+                                  ></h5>
+                                  <small
+                                    class="text-light-gray"
+                                    data-t="content.support-tickets.time2"
+                                  ></small>
+                                </div>
+                                <span
+                                  class="text-info font-weight--500 ml-auto"
+                                  data-t="content.support-tickets.status2"
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+                          <p
+                            class="text-light-gray font-size--08 mt-2"
+                            data-t="content.support-tickets.text"
+                          ></p>
+                        </a>
+                      </li>
+                      <li class="list-group-item border-light">
+                        <a href="#" class="text-reset text-decoration-none">
+                          <div class="media">
+                            <img
+                              src="../assets/img/avatars/fem07.png"
+                              class="omd-mediaObjList__avatar mr-3"
+                              alt=""
+                            />
+                            <div class="media-body text-muted font-size--08">
+                              <div class="d-flex align-items-center">
+                                <div>
+                                  <h5
+                                    class="mt-0 font-size--09 font-weight--500 m-0 mt-1"
+                                    data-t="content.support-tickets.name3"
+                                  ></h5>
+                                  <small
+                                    class="text-light-gray"
+                                    data-t="content.support-tickets.time3"
+                                  ></small>
+                                </div>
+                                <span
+                                  class="text-success font-weight--500 ml-auto"
+                                  data-t="content.support-tickets.status3"
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+                          <p
+                            class="text-light-gray font-size--08 mt-2"
+                            data-t="content.support-tickets.text"
+                          ></p>
+                        </a>
+                      </li>
+                      <li class="list-group-item border-light">
+                        <a href="#" class="text-reset text-decoration-none">
+                          <div class="media">
+                            <img
+                              src="../assets/img/avatars/male07.png"
+                              class="omd-mediaObjList__avatar mr-3"
+                              alt=""
+                            />
+                            <div class="media-body text-muted font-size--08">
+                              <div class="d-flex align-items-center">
+                                <div>
+                                  <h5
+                                    class="mt-0 font-size--09 font-weight--500 m-0 mt-1"
+                                    data-t="content.support-tickets.name4"
+                                  ></h5>
+                                  <small
+                                    class="text-light-gray"
+                                    data-t="content.support-tickets.time4"
+                                  ></small>
+                                </div>
+                                <span
+                                  class="text-info font-weight--500 ml-auto"
+                                  data-t="content.support-tickets.status4"
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+                          <p
+                            class="text-light-gray font-size--08 mt-2"
+                            data-t="content.support-tickets.text"
+                          ></p>
+                        </a>
+                      </li>
+                      <li class="list-group-item border-light">
+                        <a href="#" class="text-reset text-decoration-none">
+                          <div class="media">
+                            <img
+                              src="../assets/img/avatars/fem08.png"
+                              class="omd-mediaObjList__avatar mr-3"
+                              alt=""
+                            />
+                            <div class="media-body text-muted font-size--08">
+                              <div class="d-flex align-items-center">
+                                <div>
+                                  <h5
+                                    class="mt-0 font-size--09 font-weight--500 m-0 mt-1"
+                                    data-t="content.support-tickets.name5"
+                                  ></h5>
+                                  <small
+                                    class="text-light-gray"
+                                    data-t="content.support-tickets.time5"
+                                  ></small>
+                                </div>
+                                <span
+                                  class="text-success font-weight--500 ml-auto"
+                                  data-t="content.support-tickets.status5"
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+                          <p
+                            class="text-light-gray font-size--08 mt-2"
+                            data-t="content.support-tickets.text"
+                          ></p>
+                        </a>
+                      </li>
+                      <li class="list-group-item border-light">
+                        <a href="#" class="text-reset text-decoration-none">
+                          <div class="media">
+                            <img
+                              src="../assets/img/avatars/male08.png"
+                              class="omd-mediaObjList__avatar mr-3"
+                              alt=""
+                            />
+                            <div class="media-body text-muted font-size--08">
+                              <div class="d-flex align-items-center">
+                                <div>
+                                  <h5
+                                    class="mt-0 font-size--09 font-weight--500 m-0 mt-1"
+                                    data-t="content.support-tickets.name6"
+                                  ></h5>
+                                  <small
+                                    class="text-light-gray"
+                                    data-t="content.support-tickets.time6"
+                                  ></small>
+                                </div>
+                                <span
+                                  class="text-info font-weight--500 ml-auto"
+                                  data-t="content.support-tickets.status6"
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+                          <p
+                            class="text-light-gray font-size--08 mt-2"
+                            data-t="content.support-tickets.text"
+                          ></p>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>

@@ -1,0 +1,13 @@
+.omd-mediaObjList {
+  position: relative;
+  overflow: hidden;
+  height: rem(400);
+
+  &__avatar {
+    border-radius: 50%;
+    width: rem(40);
+    height: rem(40);
+    object-fit: cover;
+    object-position: center;
+  }
+}
