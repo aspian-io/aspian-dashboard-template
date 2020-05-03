@@ -1,0 +1,26 @@
+// Loading Datatables style
+@import '../../../vendors/datatables/cusotm';
+// Datatables responsive style
+@import '~datatables.net-responsive-bs4/css/responsive.bootstrap4.css';
+
+.omd-dt {
+  &__title {
+    font-size: 1rem;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 0.9rem;
+    }
+  }
+
+  &__table-title-wrapper {
+    min-width: rem(100);
+
+    @include media-breakpoint-up(sm) {
+      min-width: rem(150);
+    }
+  }
+
+  &__table-title-action {
+    min-width: rem(120);
+  }
+}

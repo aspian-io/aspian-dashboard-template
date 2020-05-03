@@ -30,12 +30,6 @@ button:focus {
   color: theme-color('gray');
 }
 
-.badge {
-  @include rtl {
-    padding: 0.35em 0.4em 0.15em;
-  }
-}
-
 .tooltip {
   &-inner {
     background: $white;
@@ -59,4 +53,28 @@ button:focus {
 .bs-tooltip-auto[x-placement^='right'] .arrow::before,
 .bs-tooltip-right .arrow::before {
   border-right-color: $white !important;
+}
+
+// custom pagination button style
+.page-item {
+  margin-right: 5px;
+  border-radius: 3px;
+
+  .page-link {
+    color: theme-color('light-info');
+    border: none;
+    border-radius: 3px;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  &.active {
+    background: theme-color('info');
+
+    .page-link {
+      color: $white;
+    }
+  }
 }

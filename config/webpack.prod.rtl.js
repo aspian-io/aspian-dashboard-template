@@ -9,13 +9,14 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 module.exports = {
   entry: {
     'dashboard-rtl': './src/js/pages/dashboard/dashboard-rtl.js',
+    'posts-rtl': './src/js/pages/posts/all-posts/posts-rtl.js',
   },
   output: {
     path: path.join(__dirname, '../build/fa'),
     filename: '[name].[chunkhash:8].bundle.js',
     chunkFilename: '[name].[chunkhash:8].chunk.js',
   },
-  mode: 'development',
+  mode: 'production',
   module: {
     rules: [
       {
@@ -129,6 +130,11 @@ module.exports = {
       chunks: ['dashboard-rtl'],
       template: 'src/i18n/fa/index.html',
       filename: 'index.html',
+    }),
+    new HtmlWebpackPlugin({
+      chunks: ['posts-rtl'],
+      template: 'src/i18n/fa/posts.html',
+      filename: 'posts.html',
     }),
   ],
 };

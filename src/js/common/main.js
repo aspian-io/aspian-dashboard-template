@@ -12,6 +12,3 @@ import '../vendors/jquery-finder/_chatSearch';
 import '../vendors/emoji-button/_emoji-button';
 // persian datepicker
 import '../vendors/persian-datepicker/persian-datepicker';
-
-// subheader ltr codes
-import '../components/_subheader';

@@ -1,6 +1,6 @@
 import PerfectScrollbar from 'perfect-scrollbar';
 import * as TopbarFn from './_topbar.js';
-import * as SubheaderFn from './_subheader-common';
+import * as SubheaderFn from './_subheader';
 
 // Perfect-scrollbar for sidebar
 const sidebarPs = new PerfectScrollbar('#sidebar_accordion');
@@ -14,6 +14,23 @@ const makeSidebarMinimized = () => {
   $('.l-body').addClass('l-body--minimized-padding');
   TopbarFn.addTopbarRecalcWidth();
   SubheaderFn.addSubheaderRecalcWidth();
+  // trigger sidebar change event
+  $(document).trigger('sidebarChange');
+  // sidebar changign event
+  let animationDuration = 0;
+  const i = setInterval(function () {
+    // trigger sidebar changing event
+    $(document).trigger('sidebarChanging');
+
+    animationDuration++;
+    if (animationDuration === 10) {
+      clearInterval(i);
+    }
+  }, 30);
+  // sidebar changed event
+  setTimeout(function () {
+    $(document).trigger('sidebarChanged');
+  }, 300);
 };
 
 // reset sidebar size to its default
@@ -25,6 +42,23 @@ const resetMinimizedSidebar = () => {
   $('.l-body').removeClass('l-body--minimized-padding');
   TopbarFn.removeTopbarRecalcWidth();
   SubheaderFn.removeSubheaderRecalcWidth();
+  // trigger sidebar change event
+  $(document).trigger('sidebarChange');
+  // sidebar changign event
+  let animationDuration = 0;
+  const i = setInterval(function () {
+    // trigger sidebar changing event
+    $(document).trigger('sidebarChanging');
+
+    animationDuration++;
+    if (animationDuration === 10) {
+      clearInterval(i);
+    }
+  }, 30);
+  // sidebar changed event
+  setTimeout(function () {
+    $(document).trigger('sidebarChanged');
+  }, 300);
 };
 
 // click event for non-collapse items in sidebar nav
@@ -81,6 +115,23 @@ $('#sidebar_nav').on('mouseenter', function (e) {
     $('.l-body').removeClass('l-body--minimized-padding');
     TopbarFn.removeTopbarRecalcWidth();
     SubheaderFn.removeSubheaderRecalcWidth();
+    // trigger sidebar change event
+    $(document).trigger('sidebarChange');
+    // sidebar changign event
+    let animationDuration = 0;
+    const i = setInterval(function () {
+      // trigger sidebar changing event
+      $(document).trigger('sidebarChanging');
+
+      animationDuration++;
+      if (animationDuration === 10) {
+        clearInterval(i);
+      }
+    }, 30);
+    // sidebar changed event
+    setTimeout(function () {
+      $(document).trigger('sidebarChanged');
+    }, 300);
   }
 });
 
@@ -90,6 +141,23 @@ $('#sidebar_nav').on('mouseleave', function (e) {
     $('.l-body').addClass('l-body--minimized-padding');
     TopbarFn.addTopbarRecalcWidth();
     SubheaderFn.addSubheaderRecalcWidth();
+    // trigger sidebar change event
+    $(document).trigger('sidebarChange');
+    // sidebar changign event
+    let animationDuration = 0;
+    const i = setInterval(function () {
+      // trigger sidebar changing event
+      $(document).trigger('sidebarChanging');
+
+      animationDuration++;
+      if (animationDuration === 10) {
+        clearInterval(i);
+      }
+    }, 30);
+    // sidebar changed event
+    setTimeout(function () {
+      $(document).trigger('sidebarChanged');
+    }, 300);
   }
 });
 

@@ -7,6 +7,8 @@ module.exports = {
   entry: {
     dashboard: './src/js/pages/dashboard/dashboard.js',
     'dashboard-rtl': './src/js/pages/dashboard/dashboard-rtl.js',
+    posts: './src/js/pages/posts/all-posts/posts.js',
+    'posts-rtl': './src/js/pages/posts/all-posts/posts-rtl.js',
   },
   output: {
     path: path.join(__dirname, '../build'),
@@ -98,6 +100,18 @@ module.exports = {
       chunks: ['dashboard-rtl'],
       template: 'src/i18n/fa/index.html',
       filename: 'fa/index.html',
+    }),
+    new HtmlWebpackPlugin({
+      //inject: false,
+      chunks: ['posts'],
+      template: 'src/i18n/posts.html',
+      filename: 'posts/index.html',
+    }),
+    new HtmlWebpackPlugin({
+      //inject: false,
+      chunks: ['posts-rtl'],
+      template: 'src/i18n/fa/posts.html',
+      filename: 'fa-posts/index.html',
     }),
   ],
 };

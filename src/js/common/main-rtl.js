@@ -14,6 +14,3 @@ import '../vendors/emoji-button/_emoji-button-rtl';
 import '../vendors/persian-datepicker/persian-datepicker-rtl';
 
 import '../base/_utilities-rtl';
-
-// subheader rtl codes
-import '../components/_subheader-rtl';

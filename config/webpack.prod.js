@@ -13,13 +13,14 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 module.exports = {
   entry: {
     dashboard: './src/js/pages/dashboard/dashboard.js',
+    posts: './src/js/pages/posts/all-posts/posts.js',
   },
   output: {
     path: path.join(__dirname, '../build'),
     filename: '[name].[chunkhash:8].bundle.js',
     chunkFilename: '[name].[chunkhash:8].chunk.js',
   },
-  mode: 'development',
+  mode: 'production',
   module: {
     rules: [
       {
@@ -138,6 +139,12 @@ module.exports = {
       chunks: ['dashboard'],
       template: 'src/i18n/index.html',
       filename: 'index.html',
+    }),
+    new HtmlWebpackPlugin({
+      //inject: false,
+      chunks: ['posts'],
+      template: 'src/i18n/posts.html',
+      filename: 'posts.html',
     }),
     // ComppresionPlugin will Prepare compressed versions of assets to serve them with Content-Encoding.
     // In this case we use gzip

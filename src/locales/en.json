@@ -387,6 +387,117 @@
       "status5": "Closed",
       "status6": "Open",
       "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, odio."
+    },
+
+    "all-posts": {
+      "breadcrumb": {
+        "title": "Posts",
+        "subtitle": "All Posts"
+      },
+      "delete-modal": {
+        "title": "Warning",
+        "text": "Are you sure you want to permanently remove the selected items?",
+        "cancel-btn": "Cancel",
+        "confirm-btn": "Confirm"
+      },
+      "card": {
+        "title": "Posts",
+        "title-tooltip": "Add new post",
+        "export-btn": "Export"
+      },
+      "datatable": {
+        "thead": {
+          "title": "Title",
+          "author": "Author",
+          "categories": "Categories",
+          "tags": "Tags",
+          "status": "Status",
+          "publish": "Publish",
+          "update": "Update",
+          "comments": "Comments",
+          "actions": "Actions"
+        },
+        "tbody": {
+          "title1": "Post Title Number 1",
+          "title2": "Post Title Number 2",
+          "title3": "Post Title Number 3",
+          "title4": "Post Title Number 4",
+          "title5": "Post Title Number 5",
+          "author1": "Johny Ruiz",
+          "author2": "Sarah Lopez",
+          "author3": "Judy Vasquez",
+          "author4": "Craig Lopez",
+          "author5": "Gloria Peters",
+          "categories1": "IT",
+          "categories2": "Technology",
+          "categories3": "Data Science",
+          "categories4": "Design",
+          "categories5": "AI",
+          "tags": {
+            "rec1": {
+              "tag1": "computer",
+              "tag2": "hardware",
+              "tag3": "repair"
+            },
+            "rec2": {
+              "tag1": "computer",
+              "tag2": "programming",
+              "tag3": "coding"
+            },
+            "rec3": {
+              "tag1": "python",
+              "tag2": "ML",
+              "tag3": "AI"
+            },
+            "rec4": {
+              "tag1": "XD",
+              "tag2": "web-design"
+            },
+            "rec5": {
+              "tag1": "python"
+            }
+          },
+          "status1": "Published",
+          "status2": "Draft",
+          "status3": "Updated",
+          "status4": "Published",
+          "status5": "Published",
+          "publish": {
+            "rec1": {
+              "date": "2020/04/12",
+              "time": "12:01:32 am"
+            },
+            "rec3": {
+              "date": "2020/04/14",
+              "time": "11:01:22 am"
+            },
+            "rec4": {
+              "date": "2020/04/15",
+              "time": "02:11:12 pm"
+            },
+            "rec5": {
+              "date": "2020/04/17",
+              "time": "09:11:12 am"
+            }
+          },
+          "update": {
+            "rec3": {
+              "date": "2020/04/16",
+              "time": "03:11:10 pm"
+            }
+          },
+          "comments1": "12",
+          "comments2": "0",
+          "comments3": "53",
+          "comments4": "3",
+          "comments5": "21",
+          "action-tooltip":{
+            "edit": "Edit",
+            "delete": "Delete",
+            "history": "History"
+          }
+        }
+      }
     }
   },
   "footer": {

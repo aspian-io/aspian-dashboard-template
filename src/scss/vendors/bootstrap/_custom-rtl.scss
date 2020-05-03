@@ -5,3 +5,8 @@ $font-family-base: 'Vazir', sans-serif;
 ********** importing Bootstrap 4.4.1 with rtl support *************
 ******************************************************************/
 @import '~bootstrap-v4-rtl/scss/bootstrap-rtl';
+
+.btn-group-sm > .btn,
+.btn-sm {
+  padding: 0.25rem 0.5rem 0.15rem;
+}

@@ -1,11 +1,11 @@
 // Loading Datatables style
-@import '~datatables.net-bs4/css/dataTables.bootstrap4.css';
+@import '../../vendors/datatables/cusotm';
 // Timeline component
 @import '../../components/timeline';
 // Media Object List component
 @import '../../components/media-obj-list';
 
-#sampleDataTable_paginate {
+#basicDataTable_paginate {
   padding: 0.6rem 1.25rem;
 }
 

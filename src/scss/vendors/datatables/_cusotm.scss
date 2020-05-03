@@ -1,0 +1,260 @@
+// Loading Datatables style
+@import '~datatables.net-bs4/css/dataTables.bootstrap4.css';
+// datatables select plugin style
+@import '~datatables.net-select-bs4/css/select.bootstrap4.css';
+
+// pagination style
+.dataTables_paginate {
+  .pagination {
+    .previous {
+      .page-link {
+        background: gray('200');
+        color: theme-color('light-info');
+      }
+
+      &.disabled {
+        .page-link {
+          background: gray('100');
+          color: lighten($color: theme-color('light-info'), $amount: 15);
+        }
+      }
+    }
+
+    .next {
+      .page-link {
+        background: gray('200');
+        color: theme-color('light-info');
+      }
+
+      &.disabled {
+        .page-link {
+          background: gray('100');
+          color: lighten($color: theme-color('light-info'), $amount: 15);
+        }
+      }
+    }
+  }
+}
+
+// elements style
+table.dataTable tbody td,
+table.dataTable thead th {
+  @include ltr {
+    font-family: 'Poppins', Helvetica, sans-serif !important;
+  }
+  @include rtl {
+    font-family: 'Vazir', sans-serif;
+  }
+}
+
+.dataTables_length,
+.dataTables_filter {
+  label {
+    @include ltr {
+      font-family: 'Poppins', Helvetica, sans-serif !important;
+    }
+    @include rtl {
+      font-family: 'Vazir', sans-serif;
+    }
+
+    color: theme-color('gray');
+    font-weight: 200 !important;
+
+    select,
+    input {
+      @include ltr {
+        font-family: 'Poppins', Helvetica, sans-serif !important;
+      }
+      @include rtl {
+        font-family: 'Vazir', sans-serif;
+      }
+      font-weight: 300 !important;
+      font-size: 0.8rem !important;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+// rtl sorting arrows
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc_disabled:before {
+  @include rtl {
+    left: 1em;
+    right: initial;
+  }
+}
+
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:after {
+  @include rtl {
+    left: 0.5em;
+    right: initial;
+  }
+}
+
+table.dataTable thead > tr > th.sorting_asc,
+table.dataTable thead > tr > th.sorting_desc,
+table.dataTable thead > tr > th.sorting,
+table.dataTable thead > tr > td.sorting_asc,
+table.dataTable thead > tr > td.sorting_desc,
+table.dataTable thead > tr > td.sorting {
+  @include rtl {
+    padding-right: 0.75rem;
+    padding-left: 30px;
+  }
+}
+
+.dataTables_filter {
+  @include rtl {
+    text-align: left !important;
+  }
+}
+
+div.dataTables_filter input {
+  @include rtl {
+    margin-left: 0;
+    margin-right: 0.5em;
+  }
+}
+
+table.dataTable tbody td.select-checkbox:before,
+table.dataTable thead th.select-checkbox:before {
+  font-family: 'Font Awesome 5 Free';
+  text-align: center;
+  font-weight: 900;
+  content: '\f0c8';
+  font-size: rem(20);
+  border: none;
+  color: #e8ecfa;
+  top: 50%;
+  left: 50%;
+  width: 2rem;
+  height: 2rem;
+  margin: 0;
+  transform: translate(-50%, -50%);
+}
+
+table.dataTable tbody td.select-checkbox {
+  &:focus {
+    outline: none;
+  }
+}
+
+table.dataTable tr.selected td.select-checkbox:after,
+table.dataTable tr.selected th.select-checkbox:after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f00c';
+  color: #99a6bf;
+  text-shadow: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  height: 1.3rem;
+}
+
+table.dataTable thead > tr {
+  font-family: 'Poppins', Helvetica, sans-serif !important;
+  color: gray('600');
+}
+
+table.dataTable tbody > tr {
+  font-family: 'Poppins', Helvetica, sans-serif !important;
+  background-color: #fff;
+  color: gray('600');
+  transition: background-color 0.2s ease-in;
+}
+
+table.dataTable tbody > tr.selected,
+table.dataTable tbody > tr > .selected {
+  background-color: gray('100');
+  color: gray('600');
+}
+
+// info style
+div.dataTables_wrapper div.dataTables_info {
+  color: gray('600');
+}
+
+// select all checkbox
+.dt {
+  &__select-all-checkbox {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      text-align: center;
+      width: 2rem;
+      height: 2rem;
+      margin: 0;
+      transform: translate(-50%, -50%);
+    }
+
+    &--checked {
+      &::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        content: '\f00c';
+        color: #99a6bf;
+        text-shadow: none;
+        margin: 0;
+        transform: translate(-50%, -50%);
+        height: 1.3rem;
+      }
+    }
+  }
+}
+
+table.dataTable thead input {
+  width: 100%;
+  outline: none;
+}
+
+.dataTables_scrollHead {
+  width: 100% !important;
+
+  .dataTables_scrollHeadInner {
+    width: 100% !important;
+
+    .table {
+      width: 100% !important;
+    }
+  }
+}
+
+// column collapse btn style
+table.dataTable.dtr-column > tbody > tr > td.control:before,
+table.dataTable.dtr-column > tbody > tr > th.control:before {
+  background-color: transparent;
+  font-size: rem(18);
+  line-height: rem(17);
+  color: theme-color('info');
+  box-shadow: none;
+  border: 1px solid theme-color('info');
+}
+
+table.dataTable.dtr-column > tbody > tr.parent td.control:before,
+table.dataTable.dtr-column > tbody > tr.parent th.control:before {
+  background-color: transparent;
+}
+
+// table taxt alignment
+.table td,
+.table th {
+  vertical-align: middle !important;
+}
