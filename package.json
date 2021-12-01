@@ -57,7 +57,7 @@
   ],
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",
-    "@joeattardi/emoji-button": "^2.12.1",
+    "@joeattardi/emoji-button": "^4.6.2",
     "bootstrap": "^4.4.1",
     "bootstrap-v4-rtl": "^4.4.1-1",
     "chart.js": "^2.9.3",
